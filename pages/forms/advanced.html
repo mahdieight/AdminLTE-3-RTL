@@ -1,0 +1,1823 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>پنل مدیریت - فرم پیشرفته</title>
+
+  <!-- Google Font: Source Sans Pro -->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="../../plugins/fontawesome-free/css/all.min.css">
+  <!-- daterange picker -->
+  <link rel="stylesheet" href="../../plugins/daterangepicker/daterangepicker.css">
+  <!-- iCheck for checkboxes and radio inputs -->
+  <link rel="stylesheet" href="../../plugins/icheck-bootstrap/icheck-bootstrap.min.css">
+  <!-- Bootstrap Color Picker -->
+  <link rel="stylesheet" href="../../plugins/bootstrap-colorpicker/css/bootstrap-colorpicker.min.css">
+  <!-- Tempusdominus Bootstrap 4 -->
+  <link rel="stylesheet" href="../../plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">
+  <!-- Select2 -->
+  <link rel="stylesheet" href="../../plugins/select2/css/select2.min.css">
+  <link rel="stylesheet" href="../../plugins/select2-bootstrap4-theme/select2-bootstrap4.min.css">
+  <!-- Bootstrap4 Duallistbox -->
+  <link rel="stylesheet" href="../../plugins/bootstrap4-duallistbox/bootstrap-duallistbox.min.css">
+  <!-- BS Stepper -->
+  <link rel="stylesheet" href="../../plugins/bs-stepper/css/bs-stepper.min.css">
+  <!-- dropzonejs -->
+  <link rel="stylesheet" href="../../plugins/dropzone/min/dropzone.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="../../dist/css/adminlte.min.css">
+  <!-- Theme RTL style -->
+  <link rel="stylesheet" href="../../dist/css/adminlte-rtl.css">
+  <!-- bootstrap-rtl -->
+  <link rel="stylesheet" href="../../plugins/bootstrap-rtl/css/bootstrap-rtl.css">
+</head>
+
+<body class="hold-transition sidebar-mini rtl">
+  <div class="wrapper">
+    <!-- Navbar -->
+    <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+      <!-- Left navbar links -->
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+        </li>
+        <li class="nav-item d-none d-sm-inline-block">
+          <a href="../../index3.html" class="nav-link">صفحه اصلی</a>
+        </li>
+        <li class="nav-item d-none d-sm-inline-block">
+          <a href="#" class="nav-link">تماس با ما</a>
+        </li>
+      </ul>
+
+      <!-- SEARCH FORM -->
+      <form class="form-inline ml-3">
+        <div class="input-group input-group-sm">
+          <input class="form-control form-control-navbar" type="search" placeholder="جست و جو" aria-label="جست و جو">
+          <div class="input-group-append">
+            <button class="btn btn-navbar" type="submit">
+              <i class="fas fa-search"></i>
+            </button>
+          </div>
+        </div>
+      </form>
+
+      <!-- Right navbar links -->
+      <ul class="navbar-nav ml-auto">
+        <!-- Messages Dropdown Menu -->
+        <li class="nav-item dropdown">
+          <a class="nav-link" data-toggle="dropdown" href="#">
+            <i class="far fa-comments"></i>
+            <span class="badge badge-danger navbar-badge">3</span>
+          </a>
+          <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+            <a href="#" class="dropdown-item">
+              <!-- Message Start -->
+              <div class="media">
+                <img src="../../dist/img/user1-128x128.jpg" alt="User Avatar" class="img-size-50 mr-3 img-circle">
+                <div class="media-body">
+                  <h3 class="dropdown-item-title">
+                    رستم سهرابی
+                    <span class="float-right text-sm text-danger"><i class="fas fa-star"></i></span>
+                  </h3>
+                  <p class="text-sm">هر وقت می توانی با من تماس بگیر ...</p>
+                  <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 ساعت پیش</p>
+                </div>
+              </div>
+              <!-- Message End -->
+            </a>
+            <div class="dropdown-divider"></div>
+            <a href="#" class="dropdown-item">
+              <!-- Message Start -->
+              <div class="media">
+                <img src="../../dist/img/user8-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3">
+                <div class="media-body">
+                  <h3 class="dropdown-item-title">
+                    ایمان لطفی
+                    <span class="float-right text-sm text-muted"><i class="fas fa-star"></i></span>
+                  </h3>
+                  <p class="text-sm">لطفا پیغام من رو نگاه کن</p>
+                  <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 ساعت پیش</p>
+                </div>
+              </div>
+              <!-- Message End -->
+            </a>
+            <div class="dropdown-divider"></div>
+            <a href="#" class="dropdown-item">
+              <!-- Message Start -->
+              <div class="media">
+                <img src="../../dist/img/user3-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3">
+                <div class="media-body">
+                  <h3 class="dropdown-item-title">
+                    مریم ایرانی
+                    <span class="float-right text-sm text-warning"><i class="fas fa-star"></i></span>
+                  </h3>
+                  <p class="text-sm">موضوع به اینجا می رود</p>
+                  <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 ساعت پیش</p>
+                </div>
+              </div>
+              <!-- Message End -->
+            </a>
+            <div class="dropdown-divider"></div>
+            <a href="#" class="dropdown-item dropdown-footer">مشاهده همه پیغام ها</a>
+          </div>
+        </li>
+        <!-- Notifications Dropdown Menu -->
+        <li class="nav-item dropdown">
+          <a class="nav-link" data-toggle="dropdown" href="#">
+            <i class="far fa-bell"></i>
+            <span class="badge badge-warning navbar-badge">15</span>
+          </a>
+          <div class="dropdown-menu dropdown-menu-lg dropdown-menu-left">
+            <span class="dropdown-item dropdown-header">15 اطلاعیه</span>
+            <div class="dropdown-divider"></div>
+            <a href="#" class="dropdown-item">
+              <i class="fas fa-envelope mr-2"></i> 4 پیغام جدید
+              <span class="float-left text-muted text-sm">3 دقیقه</span>
+            </a>
+            <div class="dropdown-divider"></div>
+            <a href="#" class="dropdown-item">
+              <i class="fas fa-users mr-2"></i> 8 درخواست دوستی
+              <span class="float-left text-muted text-sm">12 ساعت</span>
+            </a>
+            <div class="dropdown-divider"></div>
+            <a href="#" class="dropdown-item">
+              <i class="fas fa-file mr-2"></i> 3 گزارش جدید
+              <span class="float-left text-muted text-sm">2 روز</span>
+            </a>
+            <div class="dropdown-divider"></div>
+            <a href="#" class="dropdown-item dropdown-footer">مشاهده همه اعلان ها</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-widget="fullscreen" href="#" role="button">
+            <i class="fas fa-expand-arrows-alt"></i>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-widget="control-sidebar" data-slide="true" href="#" role="button">
+            <i class="fas fa-th-large"></i>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <!-- /.navbar -->
+
+    <!-- Main Sidebar Container -->
+    <aside class="main-sidebar sidebar-dark-primary elevation-4">
+      <!-- Brand Logo -->
+      <a href="../../index3.html" class="brand-link">
+        <img src="../../dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
+          style="opacity: .8">
+        <span class="brand-text font-weight-light">پنل مدیریت</span>
+      </a>
+
+      <!-- Sidebar -->
+      <div class="sidebar">
+        <!-- Sidebar user panel (optional) -->
+        <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+          <div class="image">
+            <img src="../../dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
+          </div>
+          <div class="info">
+            <a href="#" class="d-block">مهدی آمره</a>
+          </div>
+        </div>
+
+        <!-- SidebarSearch Form -->
+        <div class="form-inline">
+          <div class="input-group" data-widget="sidebar-search">
+            <input class="form-control form-control-sidebar" type="search" placeholder="جست و جو" aria-label="جست و جو">
+            <div class="input-group-append">
+              <button class="btn btn-sidebar">
+                <i class="fas fa-search fa-fw"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sidebar Menu -->
+        <nav class="mt-2">
+          <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+            <!-- Add icons to the links using the .nav-icon class
+with font-awesome or any other icon font library -->
+            <li class="nav-item ">
+              <a href="#" class="nav-link">
+                <i class="nav-icon fas fa-tachometer-alt"></i>
+                <p>
+                  داشبورد
+                  <i class="right fas fa-angle-left"></i>
+                </p>
+              </a>
+              <ul class="nav nav-treeview">
+                <li class="nav-item">
+                  <a href="../../index.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>داشبورد ۱</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../index2.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>داشبورد ۲</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../index3.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>داشبورد ۳</p>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a href="../widgets.html" class="nav-link">
+                <i class="nav-icon fas fa-th"></i>
+                <p>
+                  ابزارها
+                  <span class="right badge badge-danger">جدید</span>
+                </p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="nav-icon fas fa-copy"></i>
+                <p>
+                  طرح بندی ها
+                  <i class="fas fa-angle-left right"></i>
+                  <span class="badge badge-info right">6</span>
+                </p>
+              </a>
+              <ul class="nav nav-treeview">
+                <li class="nav-item">
+                  <a href="../layout/top-nav.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>منوی بالا</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="../layout/top-nav-sidebar.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>منوی بالا + سایدبار</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="../layout/boxed.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>جعبه</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="../layout/fixed-sidebar.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>سایدبار ثابت</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="../layout/fixed-sidebar-custom.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>سایدبار ثابت <small>+ محیط شخصی</small></p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="../layout/fixed-topnav.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>ناوبار ثابت</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="../layout/fixed-footer.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>فوتر ثابت</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="../layout/collapsed-sidebar.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>سایدبار بسته شده</p>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="nav-icon fas fa-chart-pie"></i>
+                <p>
+                  نمودارها
+                  <i class="right fas fa-angle-left"></i>
+                </p>
+              </a>
+              <ul class="nav nav-treeview">
+                <li class="nav-item">
+                  <a href="../charts/chartjs.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>ChartJS</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="../charts/flot.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>شناور</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="../charts/inline.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>خطی</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="../charts/uplot.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>uPlot</p>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="nav-icon fas fa-tree"></i>
+                <p>
+                  المنت های طراحی
+                  <i class="fas fa-angle-left right"></i>
+                </p>
+              </a>
+              <ul class="nav nav-treeview">
+                <li class="nav-item">
+                  <a href="general.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>عمومی</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="icons.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>آیکن ها</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="buttons.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>دکمه ها</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="sliders.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>اسلایدر ها</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="modals.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>مدال ها و هشدارها</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="navbar.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>ناوبار و تب ها</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="timeline.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>تایم لاین</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="ribbons.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>روبان ها</p>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item menu-open">
+              <a href="#" class="nav-link active">
+                <i class="nav-icon fas fa-edit"></i>
+                <p>
+                  فرم ها
+                  <i class="fas fa-angle-left right"></i>
+                </p>
+              </a>
+              <ul class="nav nav-treeview">
+                <li class="nav-item">
+                  <a href="../forms/general.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>المنت های عمومی</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="../forms/advanced.html" class="nav-link active">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>المنت های پیشفرته</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="../forms/editors.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>ویرایشگرها</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="../forms/validation.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>اعتبارسنجی</p>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="nav-icon fas fa-table"></i>
+                <p>
+                  جداول
+                  <i class="fas fa-angle-left right"></i>
+                </p>
+              </a>
+              <ul class="nav nav-treeview">
+                <li class="nav-item">
+                  <a href="../tables/simple.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>جداول ساده</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="../tables/data.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>دیتا تیبل</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="../tables/jsgrid.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>jsGrid</p>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-header">صفحات نمونه</li>
+            <li class="nav-item">
+              <a href="../calendar.html" class="nav-link">
+                <i class="nav-icon far fa-calendar-alt"></i>
+                <p>
+                  تقویم
+                  <span class="badge badge-info right">2</span>
+                </p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="../gallery.html" class="nav-link">
+                <i class="nav-icon far fa-image"></i>
+                <p>
+                  گالری
+                </p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="../kanban.html" class="nav-link">
+                <i class="nav-icon fas fa-columns"></i>
+                <p>
+                  صفحه تسک ها
+                </p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="nav-icon far fa-envelope"></i>
+                <p>
+                  باکس ایمیل
+                  <i class="fas fa-angle-left right"></i>
+                </p>
+              </a>
+              <ul class="nav nav-treeview">
+                <li class="nav-item">
+                  <a href="../mailbox/mailbox.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>صندوق ورودی</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="../mailbox/compose.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>ایجاد ایمیل</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="../mailbox/read-mail.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>خواندن</p>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="nav-icon fas fa-book"></i>
+                <p>
+                  صفحات
+                  <i class="fas fa-angle-left right"></i>
+                </p>
+              </a>
+              <ul class="nav nav-treeview">
+                <li class="nav-item">
+                  <a href="../examples/invoice.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>پیش فاکتور</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="../examples/profile.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>پروفایل کاربری</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="../examples/e-commerce.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>صفحه یک محصول</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="../examples/projects.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>پروژه ها</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="../examples/project-add.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>افزودن پروژه</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="../examples/project-edit.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>ویرایش پروژه</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="../examples/project-detail.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>جزئیات پروژه</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="../examples/contacts.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>ارتباط با ما</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="../examples/faq.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>سوالات متداول</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="../examples/contact-us.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>تماس با ما</p>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="nav-icon far fa-plus-square"></i>
+                <p>
+                  صفحات دیگر
+                  <i class="fas fa-angle-left right"></i>
+                </p>
+              </a>
+              <ul class="nav nav-treeview">
+                <li class="nav-item">
+                  <a href="#" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>
+                      ورود و عضویت نسخه ۱
+                      <i class="fas fa-angle-left right"></i>
+                    </p>
+                  </a>
+                  <ul class="nav nav-treeview">
+                    <li class="nav-item">
+                      <a href="../examples/login.html" class="nav-link">
+                        <i class="far fa-circle nav-icon"></i>
+                        <p>ورود </p>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="../examples/register.html" class="nav-link">
+                        <i class="far fa-circle nav-icon"></i>
+                        <p>عضویت</p>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="../examples/forgot-password.html" class="nav-link">
+                        <i class="far fa-circle nav-icon"></i>
+                        <p>فراموشی گذرواژه </p>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="../examples/recover-password.html" class="nav-link">
+                        <i class="far fa-circle nav-icon"></i>
+                        <p>بازیابی گذرواژه </p>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>
+                      ورود و عضویت نسخه ۲
+                      <i class="fas fa-angle-left right"></i>
+                    </p>
+                  </a>
+                  <ul class="nav nav-treeview">
+                    <li class="nav-item">
+                      <a href="../examples/login-v2.html" class="nav-link">
+                        <i class="far fa-circle nav-icon"></i>
+                        <p>ورود</p>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="../examples/register-v2.html" class="nav-link">
+                        <i class="far fa-circle nav-icon"></i>
+                        <p>عضویت</p>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="../examples/forgot-password-v2.html" class="nav-link">
+                        <i class="far fa-circle nav-icon"></i>
+                        <p>فراموشی گذرواژه</p>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="../examples/recover-password-v2.html" class="nav-link">
+                        <i class="far fa-circle nav-icon"></i>
+                        <p>بازیابی گذرواژه</p>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a href="../examples/lockscreen.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>قفل کاربری</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="../examples/legacy-user-menu.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>منوی کاربر قدیمی</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="../examples/language-menu.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>منوی زبان ها</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="../examples/404.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>خطای 404</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="../examples/500.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>خطای 500</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="../examples/pace.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Pace</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="../examples/blank.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>ضفحه خالی</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="../starter.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>سفحه شروع</p>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="nav-icon fas fa-search"></i>
+                <p>
+                  جست و جو
+                  <i class="fas fa-angle-left right"></i>
+                </p>
+              </a>
+              <ul class="nav nav-treeview">
+                <li class="nav-item">
+                  <a href="../search/simple.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>جست و جوی ساده</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="../search/enhanced.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>پیشرفته</p>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-header">سایر بخش ها</li>
+            <li class="nav-item">
+              <a href="../iframe.html" class="nav-link">
+                <i class="nav-icon fas fa-ellipsis-h"></i>
+                <p>پلاگین IFrame با تب</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="https://adminlte.io/docs/3.1/" class="nav-link">
+                <i class="nav-icon fas fa-file"></i>
+                <p>مستندات</p>
+              </a>
+            </li>
+            <li class="nav-header">مثال چند سطحی</li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="fas fa-circle nav-icon"></i>
+                <p>سطح ۱</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="nav-icon fas fa-circle"></i>
+                <p>
+                  سطح ۱
+                  <i class="right fas fa-angle-left"></i>
+                </p>
+              </a>
+              <ul class="nav nav-treeview">
+                <li class="nav-item">
+                  <a href="#" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>سطح ۲</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>
+                      سطح ۲
+                      <i class="right fas fa-angle-left"></i>
+                    </p>
+                  </a>
+                  <ul class="nav nav-treeview">
+                    <li class="nav-item">
+                      <a href="#" class="nav-link">
+                        <i class="far fa-dot-circle nav-icon"></i>
+                        <p>سطح ۳</p>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#" class="nav-link">
+                        <i class="far fa-dot-circle nav-icon"></i>
+                        <p>سطح ۳</p>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#" class="nav-link">
+                        <i class="far fa-dot-circle nav-icon"></i>
+                        <p>سطح ۳</p>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>سطح ۲</p>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="fas fa-circle nav-icon"></i>
+                <p>سطح ۱</p>
+              </a>
+            </li>
+            <li class="nav-header">برچسب ها</li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="nav-icon far fa-circle text-danger"></i>
+                <p class="text">مهم</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="nav-icon far fa-circle text-warning"></i>
+                <p>هشدار</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="nav-icon far fa-circle text-info"></i>
+                <p>اطلاعات</p>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <!-- /.sidebar-menu -->
+      </div>
+      <!-- /.sidebar -->
+    </aside>
+
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper">
+      <!-- Content Header (Page header) -->
+      <section class="content-header">
+        <div class="container-fluid">
+          <div class="row mb-2">
+            <div class="col-sm-6">
+              <h1>فرم های پیشرفته</h1>
+            </div>
+            <div class="col-sm-6">
+              <ol class="breadcrumb float-sm-lwft">
+                <li class="breadcrumb-item"><a href="#">صفحه اصلی</a></li>
+                <li class="breadcrumb-item active">فرم های پیشرفته</li>
+              </ol>
+            </div>
+          </div>
+        </div><!-- /.container-fluid -->
+      </section>
+
+      <!-- Main content -->
+      <section class="content">
+        <div class="container-fluid">
+          <!-- SELECT2 EXAMPLE -->
+          <div class="card card-default">
+            <div class="card-header">
+              <h3 class="card-title">Select2 (تم پیش فرض)</h3>
+
+              <div class="card-tools">
+                <button type="button" class="btn btn-tool" data-card-widget="collapse">
+                  <i class="fas fa-minus"></i>
+                </button>
+                <button type="button" class="btn btn-tool" data-card-widget="remove">
+                  <i class="fas fa-times"></i>
+                </button>
+              </div>
+            </div>
+            <!-- /.card-header -->
+            <div class="card-body">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label>حالت ساده</label>
+                    <select class="form-control select2" style="width: 100%;">
+                      <option selected="selected">ایران</option>
+                      <option>فرانسه</option>
+                      <option>افغانستان</option>
+                      <option>هند</option>
+                      <option>چین</option>
+                      <option>روسیه</option>
+                      <option>هلند</option>
+                    </select>
+                  </div>
+                  <!-- /.form-group -->
+                  <div class="form-group">
+                    <label>غیر فعال شده</label>
+                    <select class="form-control select2" disabled="disabled" style="width: 100%;">
+                      <option selected="selected">ایران</option>
+                      <option>فرانسه</option>
+                      <option>افغانستان</option>
+                      <option>هند</option>
+                      <option>چین</option>
+                      <option>روسیه</option>
+                      <option>هلند</option>
+                    </select>
+                  </div>
+                  <!-- /.form-group -->
+                </div>
+                <!-- /.col -->
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label>چند انتخابی</label>
+                    <select class="select2" multiple="multiple" data-placeholder="یک کشور را انتخاب کنید"
+                      style="width: 100%;">
+                      <option>ایران</option>
+                      <option>فرانسه</option>
+                      <option>افغانستان</option>
+                      <option>هند</option>
+                      <option>چین</option>
+                      <option>روسیه</option>
+                      <option>هلند</option>
+                    </select>
+                  </div>
+                  <!-- /.form-group -->
+                  <div class="form-group">
+                    <label>غیر فعال کردن نتایج </label>
+                    <select class="form-control select2" style="width: 100%;">
+                      <option selected="selected">ایران</option>
+                      <option>فرانسه</option>
+                      <option disabled="disabled">افغانستان (غیر فعال شده)</option>
+                      <option>هند</option>
+                      <option>چین</option>
+                      <option>روسیه</option>
+                      <option>هلند</option>
+                    </select>
+                  </div>
+                  <!-- /.form-group -->
+                </div>
+                <!-- /.col -->
+              </div>
+              <!-- /.row -->
+
+              <h5>رنگ بندی سفارسی</h5>
+              <div class="row">
+                <div class="col-12 col-sm-6">
+                  <div class="form-group">
+                    <label>حالت ساده (.select2-danger)</label>
+                    <select class="form-control select2 select2-danger" data-dropdown-css-class="select2-danger"
+                      style="width: 100%;">
+                      <option selected="selected">ایران</option>
+                      <option>فرانسه</option>
+                      <option>افغانستان</option>
+                      <option>هند</option>
+                      <option>چین</option>
+                      <option>روسیه</option>
+                      <option>هلند</option>
+                    </select>
+                  </div>
+                  <!-- /.form-group -->
+                </div>
+                <!-- /.col -->
+                <div class="col-12 col-sm-6">
+                  <div class="form-group">
+                    <label>چند انتخابی (.select2-purple)</label>
+                    <div class="select2-purple">
+                      <select class="select2" multiple="multiple" data-placeholder="یک کشور را انتخاب کنید"
+                        data-dropdown-css-class="select2-purple" style="width: 100%;">
+                        <option>ایران</option>
+                        <option>فرانسه</option>
+                        <option>افغانستان</option>
+                        <option>هند</option>
+                        <option>چین</option>
+                        <option>روسیه</option>
+                        <option>هلند</option>
+                      </select>
+                    </div>
+                  </div>
+                  <!-- /.form-group -->
+                </div>
+                <!-- /.col -->
+              </div>
+              <!-- /.row -->
+            </div>
+            <!-- /.card-body -->
+            <div class="card-footer">
+              برای اطلاعات بیشتر <a href="https://select2.github.io/">مستندات این پلاگین</a> را مطالعه نمایید
+
+            </div>
+          </div>
+          <!-- /.card -->
+
+          <!-- SELECT2 EXAMPLE -->
+          <div class="card card-default">
+            <div class="card-header">
+              <h3 class="card-title">Select2 (تم بوت استرپ)</h3>
+
+              <div class="card-tools">
+                <button type="button" class="btn btn-tool" data-card-widget="collapse">
+                  <i class="fas fa-minus"></i>
+                </button>
+                <button type="button" class="btn btn-tool" data-card-widget="remove">
+                  <i class="fas fa-times"></i>
+                </button>
+              </div>
+            </div>
+            <!-- /.card-header -->
+            <div class="card-body">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label>حالت ساده</label>
+                    <select class="form-control select2bs4" style="width: 100%;">
+                      <option selected="selected">ایران</option>
+                      <option>فرانسه</option>
+                      <option>افغانستان</option>
+                      <option>هند</option>
+                      <option>چین</option>
+                      <option>روسیه</option>
+                      <option>هلند</option>
+                    </select>
+                  </div>
+                  <!-- /.form-group -->
+                  <div class="form-group">
+                    <label>غیر فعال شده</label>
+                    <select class="form-control select2bs4" disabled="disabled" style="width: 100%;">
+                      <option selected="selected">ایران</option>
+                      <option>فرانسه</option>
+                      <option>افغانستان</option>
+                      <option>هند</option>
+                      <option>چین</option>
+                      <option>روسیه</option>
+                      <option>هلند</option>
+                    </select>
+                  </div>
+                  <!-- /.form-group -->
+                </div>
+                <!-- /.col -->
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label>چند انتخابی</label>
+                    <select class="select2bs4" multiple="multiple" data-placeholder="یک کشور را انتخاب نمایید"
+                      style="width: 100%;">
+                      <option>ایران</option>
+                      <option>فرانسه</option>
+                      <option>افغانستان</option>
+                      <option>هند</option>
+                      <option>چین</option>
+                      <option>روسیه</option>
+                      <option>هلند</option>
+                    </select>
+                  </div>
+                  <!-- /.form-group -->
+                  <div class="form-group">
+                    <label>غیرفعال کردن نتایح</label>
+                    <select class="form-control select2bs4" style="width: 100%;">
+                      <option selected="selected">ایران</option>
+                      <option>فرانسه</option>
+                      <option disabled="disabled">افغانستان</option>
+                      <option>هند</option>
+                      <option>چین</option>
+                      <option>روسیه</option>
+                      <option>هلند</option>
+                    </select>
+                  </div>
+                  <!-- /.form-group -->
+                </div>
+                <!-- /.col -->
+              </div>
+              <!-- /.row -->
+            </div>
+            <!-- /.card-body -->
+            <div class="card-footer">
+              برای اطلاعات بیشتر <a href="https://select2.github.io/">مستندات این پلاگین</a> را مطالعه نمایید
+            </div>
+          </div>
+          <!-- /.card -->
+
+          <div class="card card-default">
+            <div class="card-header">
+              <h3 class="card-title">بوت استرپ دو لیست باکس</h3>
+
+              <div class="card-tools">
+                <button type="button" class="btn btn-tool" data-card-widget="collapse">
+                  <i class="fas fa-minus"></i>
+                </button>
+                <button type="button" class="btn btn-tool" data-card-widget="remove">
+                  <i class="fas fa-times"></i>
+                </button>
+              </div>
+            </div>
+            <!-- /.card-header -->
+            <div class="card-body">
+              <div class="row">
+                <div class="col-12">
+                  <div class="form-group">
+                    <label>چند انتخابی</label>
+                    <select class="duallistbox" multiple="multiple">
+                      <option selected>ایران</option>
+                      <option>فرانسه</option>
+                      <option>افغانستان</option>
+                      <option>هند</option>
+                      <option>چین</option>
+                      <option>روسیه</option>
+                      <option>هلند</option>
+                    </select>
+                  </div>
+                  <!-- /.form-group -->
+                </div>
+                <!-- /.col -->
+              </div>
+              <!-- /.row -->
+            </div>
+            <!-- /.card-body -->
+            <div class="card-footer">
+              برای اطلاعات بیشتر <a href="https://select2.github.io/">مستندات این پلاگین</a> را مطالعه نمایید
+
+            </div>
+          </div>
+          <!-- /.card -->
+
+          <div class="row">
+            <div class="col-md-6">
+
+              <div class="card card-danger">
+                <div class="card-header">
+                  <h3 class="card-title">ورودی ماسک</h3>
+                </div>
+                <div class="card-body">
+                  <!-- Date dd/mm/yyyy -->
+                  <div class="form-group">
+                    <label>ماسک زمان:</label>
+
+                    <div class="input-group">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text"><i class="far fa-calendar-alt"></i></span>
+                      </div>
+                      <input type="text" class="form-control" data-inputmask-alias="datetime"
+                        data-inputmask-inputformat="dd/mm/yyyy" data-mask>
+                    </div>
+                    <!-- /.input group -->
+                  </div>
+                  <!-- /.form group -->
+
+                  <!-- Date mm/dd/yyyy -->
+                  <div class="form-group">
+                    <div class="input-group">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text"><i class="far fa-calendar-alt"></i></span>
+                      </div>
+                      <input type="text" class="form-control" data-inputmask-alias="datetime"
+                        data-inputmask-inputformat="mm/dd/yyyy" data-mask>
+                    </div>
+                    <!-- /.input group -->
+                  </div>
+                  <!-- /.form group -->
+
+                  <!-- phone mask -->
+                  <div class="form-group">
+                    <label>ماسک تلفن (آمریکا):</label>
+
+                    <div class="input-group">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text"><i class="fas fa-phone"></i></span>
+                      </div>
+                      <input type="text" class="form-control" data-inputmask='"mask": "(999) 999-9999"' data-mask>
+                    </div>
+                    <!-- /.input group -->
+                  </div>
+                  <!-- /.form group -->
+
+                  <!-- phone mask -->
+                  <div class="form-group">
+                    <label>ماسک تلفن همراه (آمریکا):</label>
+
+                    <div class="input-group">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text"><i class="fas fa-phone"></i></span>
+                      </div>
+                      <input type="text" class="form-control"
+                        data-inputmask="'mask': ['999-999-9999 [x99999]', '+099 99 99 9999[9]-9999']" data-mask>
+                    </div>
+                    <!-- /.input group -->
+                  </div>
+                  <!-- /.form group -->
+
+                  <!-- IP mask -->
+                  <div class="form-group">
+                    <label>ماسک IP:</label>
+
+                    <div class="input-group">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text"><i class="fas fa-laptop"></i></span>
+                      </div>
+                      <input type="text" class="form-control" data-inputmask="'alias': 'ip'" data-mask>
+                    </div>
+                    <!-- /.input group -->
+                  </div>
+                  <!-- /.form group -->
+
+                </div>
+                <!-- /.card-body -->
+              </div>
+              <!-- /.card -->
+
+              <div class="card card-info">
+                <div class="card-header">
+                  <h3 class="card-title">انتخاب گر زمان و رنگ</h3>
+                </div>
+                <div class="card-body">
+                  <!-- Color Picker -->
+                  <div class="form-group">
+                    <label>انتخابگر رنگ:</label>
+                    <input type="text" class="form-control my-colorpicker1">
+                  </div>
+                  <!-- /.form group -->
+
+                  <!-- Color Picker -->
+                  <div class="form-group">
+                    <label>انتخابگر رنگ پیشرفته:</label>
+
+                    <div class="input-group my-colorpicker2">
+                      <input type="text" class="form-control">
+
+                      <div class="input-group-append">
+                        <span class="input-group-text"><i class="fas fa-square"></i></span>
+                      </div>
+                    </div>
+                    <!-- /.input group -->
+                  </div>
+                  <!-- /.form group -->
+
+                  <!-- time Picker -->
+                  <div class="bootstrap-timepicker">
+                    <div class="form-group">
+                      <label>انتخاب گر زمان:</label>
+
+                      <div class="input-group date" id="timepicker" data-target-input="nearest">
+                        <input type="text" class="form-control datetimepicker-input" data-target="#timepicker" />
+                        <div class="input-group-append" data-target="#timepicker" data-toggle="datetimepicker">
+                          <div class="input-group-text"><i class="far fa-clock"></i></div>
+                        </div>
+                      </div>
+                      <!-- /.input group -->
+                    </div>
+                    <!-- /.form group -->
+                  </div>
+                </div>
+                <!-- /.card-body -->
+              </div>
+              <!-- /.card -->
+
+            </div>
+            <!-- /.col (left) -->
+            <div class="col-md-6">
+              <div class="card card-primary">
+                <div class="card-header">
+                  <h3 class="card-title">انتخاب گر تاریخ</h3>
+                </div>
+                <div class="card-body">
+                  <!-- Date -->
+                  <div class="form-group">
+                    <label>تاریخ:</label>
+                    <div class="input-group date" id="reservationdate" data-target-input="nearest">
+                      <input type="text" class="form-control datetimepicker-input" data-target="#reservationdate" />
+                      <div class="input-group-append" data-target="#reservationdate" data-toggle="datetimepicker">
+                        <div class="input-group-text"><i class="fa fa-calendar"></i></div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- /.form group -->
+                  <!-- Date range -->
+                  <div class="form-group">
+                    <label>محدوده تاریخ:</label>
+
+                    <div class="input-group">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text">
+                          <i class="far fa-calendar-alt"></i>
+                        </span>
+                      </div>
+                      <input type="text" class="form-control float-right" id="reservation">
+                    </div>
+                    <!-- /.input group -->
+                  </div>
+                  <!-- /.form group -->
+
+                  <!-- Date and time range -->
+                  <div class="form-group">
+                    <label>محدوده تاریخ با زمان:</label>
+
+                    <div class="input-group">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text"><i class="far fa-clock"></i></span>
+                      </div>
+                      <input type="text" class="form-control float-right" id="reservationtime">
+                    </div>
+                    <!-- /.input group -->
+                  </div>
+                  <!-- /.form group -->
+
+                  <!-- Date and time range -->
+                  <div class="form-group">
+                    <label>دکمه محدوده تاریخ:</label>
+
+                    <div class="input-group">
+                      <button type="button" class="btn btn-default float-right" id="daterange-btn">
+                        <i class="far fa-calendar-alt"></i> دکمه محدوده تاریخ
+                        <i class="fas fa-caret-down"></i>
+                      </button>
+                    </div>
+                  </div>
+                  <!-- /.form group -->
+                </div>
+                <div class="card-footer">
+                  برای کسب اطلاعات بیشتر <a href="https://tempusdominus.github.io/bootstrap-4/Usage/">مستندات این پلاگین
+                  </a> را مطالعه نمایید
+                </div>
+                <!-- /.card-body -->
+              </div>
+              <!-- /.card -->
+
+              <!-- iCheck -->
+              <div class="card card-success">
+                <div class="card-header">
+                  <h3 class="card-title"> چک باکس &amp; رادیو باکس</h3>
+                </div>
+                <div class="card-body">
+                  <!-- Minimal style -->
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <!-- checkbox -->
+                      <div class="form-group clearfix">
+                        <div class="icheck-primary d-inline">
+                          <input type="checkbox" id="checkboxPrimary1" checked>
+                          <label for="checkboxPrimary1">
+                          </label>
+                        </div>
+                        <div class="icheck-primary d-inline">
+                          <input type="checkbox" id="checkboxPrimary2">
+                          <label for="checkboxPrimary2">
+                          </label>
+                        </div>
+                        <div class="icheck-primary d-inline">
+                          <input type="checkbox" id="checkboxPrimary3" disabled>
+                          <label for="checkboxPrimary3">
+                            Primary checkbox
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <!-- radio -->
+                      <div class="form-group clearfix">
+                        <div class="icheck-primary d-inline">
+                          <input type="radio" id="radioPrimary1" name="r1" checked>
+                          <label for="radioPrimary1">
+                          </label>
+                        </div>
+                        <div class="icheck-primary d-inline">
+                          <input type="radio" id="radioPrimary2" name="r1">
+                          <label for="radioPrimary2">
+                          </label>
+                        </div>
+                        <div class="icheck-primary d-inline">
+                          <input type="radio" id="radioPrimary3" name="r1" disabled>
+                          <label for="radioPrimary3">
+                            Primary radio
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Minimal red style -->
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <!-- checkbox -->
+                      <div class="form-group clearfix">
+                        <div class="icheck-danger d-inline">
+                          <input type="checkbox" checked id="checkboxDanger1">
+                          <label for="checkboxDanger1">
+                          </label>
+                        </div>
+                        <div class="icheck-danger d-inline">
+                          <input type="checkbox" id="checkboxDanger2">
+                          <label for="checkboxDanger2">
+                          </label>
+                        </div>
+                        <div class="icheck-danger d-inline">
+                          <input type="checkbox" disabled id="checkboxDanger3">
+                          <label for="checkboxDanger3">
+                            Danger checkbox
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <!-- radio -->
+                      <div class="form-group clearfix">
+                        <div class="icheck-danger d-inline">
+                          <input type="radio" name="r2" checked id="radioDanger1">
+                          <label for="radioDanger1">
+                          </label>
+                        </div>
+                        <div class="icheck-danger d-inline">
+                          <input type="radio" name="r2" id="radioDanger2">
+                          <label for="radioDanger2">
+                          </label>
+                        </div>
+                        <div class="icheck-danger d-inline">
+                          <input type="radio" name="r2" disabled id="radioDanger3">
+                          <label for="radioDanger3">
+                            Danger radio
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Minimal red style -->
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <!-- checkbox -->
+                      <div class="form-group clearfix">
+                        <div class="icheck-success d-inline">
+                          <input type="checkbox" checked id="checkboxSuccess1">
+                          <label for="checkboxSuccess1">
+                          </label>
+                        </div>
+                        <div class="icheck-success d-inline">
+                          <input type="checkbox" id="checkboxSuccess2">
+                          <label for="checkboxSuccess2">
+                          </label>
+                        </div>
+                        <div class="icheck-success d-inline">
+                          <input type="checkbox" disabled id="checkboxSuccess3">
+                          <label for="checkboxSuccess3">
+                            Success checkbox
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <!-- radio -->
+                      <div class="form-group clearfix">
+                        <div class="icheck-success d-inline">
+                          <input type="radio" name="r3" checked id="radioSuccess1">
+                          <label for="radioSuccess1">
+                          </label>
+                        </div>
+                        <div class="icheck-success d-inline">
+                          <input type="radio" name="r3" id="radioSuccess2">
+                          <label for="radioSuccess2">
+                          </label>
+                        </div>
+                        <div class="icheck-success d-inline">
+                          <input type="radio" name="r3" disabled id="radioSuccess3">
+                          <label for="radioSuccess3">
+                            Success radio
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- /.card-body -->
+                <div class="card-footer">
+                  برای کسب اطلاعات بیشتر <a href="https://bantikyan.github.io/icheck-bootstrap/">مستندات این پلاگین</a>
+                  را مطالعه نمایید
+                </div>
+              </div>
+              <!-- /.card -->
+
+              <!-- Bootstrap Switch -->
+              <div class="card card-secondary">
+                <div class="card-header">
+                  <h3 class="card-title">سوییچر بوت استرپ</h3>
+                </div>
+                <div class="card-body">
+                  <input type="checkbox" name="my-checkbox" checked data-bootstrap-switch>
+                  <input type="checkbox" name="my-checkbox" checked data-bootstrap-switch data-off-color="danger"
+                    data-on-color="success">
+                </div>
+              </div>
+              <!-- /.card -->
+            </div>
+            <!-- /.col (right) -->
+          </div>
+          <!-- /.row -->
+          <div class="row">
+            <div class="col-md-12">
+              <div class="card card-default">
+                <div class="card-header">
+                  <h3 class="card-title">فرم چند مرحله ای</h3>
+                </div>
+                <div class="card-body p-0">
+                  <div class="bs-stepper">
+                    <div class="bs-stepper-header" role="tablist">
+                      <!-- your steps here -->
+                      <div class="step" data-target="#logins-part">
+                        <button type="button" class="step-trigger" role="tab" aria-controls="logins-part"
+                          id="logins-part-trigger">
+                          <span class="bs-stepper-circle">1</span>
+                          <span class="bs-stepper-label">ورود</span>
+                        </button>
+                      </div>
+                      <div class="line"></div>
+                      <div class="step" data-target="#information-part">
+                        <button type="button" class="step-trigger" role="tab" aria-controls="information-part"
+                          id="information-part-trigger">
+                          <span class="bs-stepper-circle">2</span>
+                          <span class="bs-stepper-label">مشاهده اطلاعات</span>
+                        </button>
+                      </div>
+                    </div>
+                    <div class="bs-stepper-content">
+                      <!-- your steps content here -->
+                      <div id="logins-part" class="content" role="tabpanel" aria-labelledby="logins-part-trigger">
+                        <div class="form-group">
+                          <label for="exampleInputEmail1">آدرس ایمیل</label>
+                          <input type="email" class="form-control" id="exampleInputEmail1"
+                            placeholder="ایمیل خود را وارد کنید">
+                        </div>
+                        <div class="form-group">
+                          <label for="exampleInputPassword1">گذرواژه</label>
+                          <input type="password" class="form-control" id="exampleInputPassword1"
+                            placeholder="گذرواژه خود را وارد کنید">
+                        </div>
+                        <button class="btn btn-primary" onclick="stepper.next()">بعدی</button>
+                      </div>
+                      <div id="information-part" class="content" role="tabpanel"
+                        aria-labelledby="information-part-trigger">
+                        <div class="form-group">
+                          <label for="exampleInputFile">بارگزاری فایل</label>
+                          <div class="input-group">
+                            <div class="custom-file">
+                              <input type="file" class="custom-file-input" id="exampleInputFile">
+                              <label class="custom-file-label" for="exampleInputFile">انتخاب فایل</label>
+                            </div>
+                            <div class="input-group-append">
+                              <span class="input-group-text">بارگزاری</span>
+                            </div>
+                          </div>
+                        </div>
+                        <button class="btn btn-primary" onclick="stepper.previous()">قبلی</button>
+                        <button type="submit" class="btn btn-primary">ارسال</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- /.card-body -->
+                <div class="card-footer">
+                  برای کسب اطلاعات بیشتر <a href="https://github.com/Johann-S/bs-stepper/#how-to-use-it">مستندات این
+                    پلاگین</a> را مطالعه نمایید.
+                </div>
+              </div>
+              <!-- /.card -->
+            </div>
+          </div>
+          <!-- /.row -->
+          <div class="row">
+            <div class="col-md-12">
+              <div class="card card-default">
+                <div class="card-header">
+                  <h3 class="card-title">Dropzone.js <small><em>پلاگین بارگزاری فایل</em></small></h3>
+                </div>
+                <div class="card-body">
+                  <div id="actions" class="row">
+                    <div class="col-lg-6">
+                      <div class="btn-group w-100">
+                        <span class="btn btn-success col fileinput-button">
+                          <i class="fas fa-plus"></i>
+                          <span>افزودن فایل</span>
+                        </span>
+                        <button type="submit" class="btn btn-primary col start">
+                          <i class="fas fa-upload"></i>
+                          <span>شروع بارگزاری</span>
+                        </button>
+                        <button type="reset" class="btn btn-warning col cancel">
+                          <i class="fas fa-times-circle"></i>
+                          <span>لغو بارگزاری</span>
+                        </button>
+                      </div>
+                    </div>
+                    <div class="col-lg-6 d-flex align-items-center">
+                      <div class="fileupload-process w-100">
+                        <div id="total-progress" class="progress progress-striped active" role="progressbar"
+                          aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+                          <div class="progress-bar progress-bar-success" style="width:0%;" data-dz-uploadprogress></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="table table-striped files" id="previews">
+                    <div id="template" class="row mt-2">
+                      <div class="col-auto">
+                        <span class="preview"><img src="data:," alt="" data-dz-thumbnail /></span>
+                      </div>
+                      <div class="col d-flex align-items-center">
+                        <p class="mb-0">
+                          <span class="lead" data-dz-name></span>
+                          (<span data-dz-size></span>)
+                        </p>
+                        <strong class="error text-danger" data-dz-errormessage></strong>
+                      </div>
+                      <div class="col-4 d-flex align-items-center">
+                        <div class="progress progress-striped active w-100" role="progressbar" aria-valuemin="0"
+                          aria-valuemax="100" aria-valuenow="0">
+                          <div class="progress-bar progress-bar-success" style="width:0%;" data-dz-uploadprogress></div>
+                        </div>
+                      </div>
+                      <div class="col-auto d-flex align-items-center">
+                        <div class="btn-group">
+                          <button class="btn btn-primary start">
+                            <i class="fas fa-upload"></i>
+                            <span>شروع</span>
+                          </button>
+                          <button data-dz-remove class="btn btn-warning cancel">
+                            <i class="fas fa-times-circle"></i>
+                            <span>لغو</span>
+                          </button>
+                          <button data-dz-remove class="btn btn-danger delete">
+                            <i class="fas fa-trash"></i>
+                            <span>حذف</span>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- /.card-body -->
+                <div class="card-footer">
+                  برای کسب اطلاعات بیشتر <a href="https://www.dropzonejs.com">مستندات این پلاگین</a> را مطالعه نمایید.
+                </div>
+              </div>
+              <!-- /.card -->
+            </div>
+          </div>
+          <!-- /.row -->
+        </div>
+        <!-- /.container-fluid -->
+      </section>
+      <!-- /.content -->
+    </div>
+    <!-- /.content-wrapper -->
+    <footer class="main-footer">
+      <strong>کپی رایت &copy; 2014-2020 <a href="https://adminlte.io">AdminLTE.io</a>.</strong>
+      تمامی حقوق محفوظ می باشد. ارائه شده برای پارسی زبانان توسط <a href="http://mahdieight.ir">مهدی آمره</a>
+      <div class="float-left d-none d-sm-inline-block">
+        <b>نسخه</b> 3.1.0-rc
+      </div>
+    </footer>
+
+    <!-- Control Sidebar -->
+    <aside class="control-sidebar control-sidebar-dark">
+      <!-- Control sidebar content goes here -->
+    </aside>
+    <!-- /.control-sidebar -->
+  </div>
+  <!-- ./wrapper -->
+
+  <!-- jQuery -->
+  <script src="../../plugins/jquery/jquery.min.js"></script>
+  <!-- Bootstrap 4 -->
+  <script src="../../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <!-- Select2 -->
+  <script src="../../plugins/select2/js/select2.full.min.js"></script>
+  <!-- Bootstrap4 Duallistbox -->
+  <script src="../../plugins/bootstrap4-duallistbox/jquery.bootstrap-duallistbox.min.js"></script>
+  <!-- InputMask -->
+  <script src="../../plugins/moment/moment.min.js"></script>
+  <script src="../../plugins/inputmask/jquery.inputmask.min.js"></script>
+  <!-- date-range-picker -->
+  <script src="../../plugins/daterangepicker/daterangepicker.js"></script>
+  <!-- bootstrap color picker -->
+  <script src="../../plugins/bootstrap-colorpicker/js/bootstrap-colorpicker.min.js"></script>
+  <!-- Tempusdominus Bootstrap 4 -->
+  <script src="../../plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
+  <!-- Bootstrap Switch -->
+  <script src="../../plugins/bootstrap-switch/js/bootstrap-switch.min.js"></script>
+  <!-- BS-Stepper -->
+  <script src="../../plugins/bs-stepper/js/bs-stepper.min.js"></script>
+  <!-- dropzonejs -->
+  <script src="../../plugins/dropzone/min/dropzone.min.js"></script>
+  <!-- AdminLTE App -->
+  <script src="../../dist/js/adminlte.min.js"></script>
+  <!-- AdminLTE for demo purposes -->
+  <script src="../../dist/js/demo.js"></script>
+  <!-- Page specific script -->
+  <script>
+    $(function () {
+      //Initialize Select2 Elements
+      $('.select2').select2()
+
+      //Initialize Select2 Elements
+      $('.select2bs4').select2({
+        theme: 'bootstrap4'
+      })
+
+      //Datemask dd/mm/yyyy
+      $('#datemask').inputmask('dd/mm/yyyy', { 'placeholder': 'dd/mm/yyyy' })
+      //Datemask2 mm/dd/yyyy
+      $('#datemask2').inputmask('mm/dd/yyyy', { 'placeholder': 'mm/dd/yyyy' })
+      //Money Euro
+      $('[data-mask]').inputmask()
+
+      //Date range picker
+      $('#reservationdate').datetimepicker({
+        format: 'L'
+      });
+      //Date range picker
+      $('#reservation').daterangepicker()
+      //Date range picker with time picker
+      $('#reservationtime').daterangepicker({
+        timePicker: true,
+        timePickerIncrement: 30,
+        locale: {
+          format: 'MM/DD/YYYY hh:mm A'
+        }
+      })
+      //Date range as a button
+      $('#daterange-btn').daterangepicker(
+        {
+          ranges: {
+            'Today': [moment(), moment()],
+            'Yesterday': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
+            'Last 7 Days': [moment().subtract(6, 'days'), moment()],
+            'Last 30 Days': [moment().subtract(29, 'days'), moment()],
+            'This Month': [moment().startOf('month'), moment().endOf('month')],
+            'Last Month': [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
+          },
+          startDate: moment().subtract(29, 'days'),
+          endDate: moment()
+        },
+        function (start, end) {
+          $('#reportrange span').html(start.format('MMMM D, YYYY') + ' - ' + end.format('MMMM D, YYYY'))
+        }
+      )
+
+      //Timepicker
+      $('#timepicker').datetimepicker({
+        format: 'LT'
+      })
+
+      //Bootstrap Duallistbox
+      $('.duallistbox').bootstrapDualListbox()
+
+      //Colorpicker
+      $('.my-colorpicker1').colorpicker()
+      //color picker with addon
+      $('.my-colorpicker2').colorpicker()
+
+      $('.my-colorpicker2').on('colorpickerChange', function (event) {
+        $('.my-colorpicker2 .fa-square').css('color', event.color.toString());
+      });
+
+      $("input[data-bootstrap-switch]").each(function () {
+        $(this).bootstrapSwitch('state', $(this).prop('checked'));
+      });
+
+    })
+    // BS-Stepper Init
+    document.addEventListener('DOMContentLoaded', function () {
+      window.stepper = new Stepper(document.querySelector('.bs-stepper'))
+    });
+
+    // DropzoneJS Demo Code Start
+    Dropzone.autoDiscover = false;
+
+    // Get the template HTML and remove it from the doumenthe template HTML and remove it from the doument
+    var previewNode = document.querySelector("#template");
+    previewNode.id = "";
+    var previewTemplate = previewNode.parentNode.innerHTML;
+    previewNode.parentNode.removeChild(previewNode);
+
+    var myDropzone = new Dropzone(document.body, { // Make the whole body a dropzone
+      url: "/target-url", // Set the url
+      thumbnailWidth: 80,
+      thumbnailHeight: 80,
+      parallelUploads: 20,
+      previewTemplate: previewTemplate,
+      autoQueue: false, // Make sure the files aren't queued until manually added
+      previewsContainer: "#previews", // Define the container to display the previews
+      clickable: ".fileinput-button" // Define the element that should be used as click trigger to select files.
+    });
+
+    myDropzone.on("addedfile", function (file) {
+      // Hookup the start button
+      file.previewElement.querySelector(".start").onclick = function () { myDropzone.enqueueFile(file); };
+    });
+
+    // Update the total progress bar
+    myDropzone.on("totaluploadprogress", function (progress) {
+      document.querySelector("#total-progress .progress-bar").style.width = progress + "%";
+    });
+
+    myDropzone.on("sending", function (file) {
+      // Show the total progress bar when upload starts
+      document.querySelector("#total-progress").style.opacity = "1";
+      // And disable the start button
+      file.previewElement.querySelector(".start").setAttribute("disabled", "disabled");
+    });
+
+    // Hide the total progress bar when nothing's uploading anymore
+    myDropzone.on("queuecomplete", function (progress) {
+      document.querySelector("#total-progress").style.opacity = "0";
+    });
+
+    // Setup the buttons for all transfers
+    // The "add files" button doesn't need to be setup because the config
+    // `clickable` has already been specified.
+    document.querySelector("#actions .start").onclick = function () {
+      myDropzone.enqueueFiles(myDropzone.getFilesWithStatus(Dropzone.ADDED));
+    };
+    document.querySelector("#actions .cancel").onclick = function () {
+      myDropzone.removeAllFiles(true);
+    };
+  // DropzoneJS Demo Code End
+  </script>
+</body>
+
+</html>

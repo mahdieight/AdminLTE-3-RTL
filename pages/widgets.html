@@ -1,0 +1,3187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>پنل مدیریت AdminLte -   ابزارها</title>
+
+  <!-- Google Font: Source Sans Pro -->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="../plugins/fontawesome-free/css/all.min.css">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="../dist/css/adminlte.min.css">
+  <!-- Theme RTL style -->
+  <link rel="stylesheet" href="../dist/css/adminlte-rtl.css">
+  <!-- bootstrap-rtl -->
+  <link rel="stylesheet" href="../plugins/bootstrap-rtl/css/bootstrap-rtl.css">
+</head>
+
+<body class="hold-transition sidebar-mini rtl">
+  <div class="wrapper">
+    <!-- Navbar -->
+    <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+      <!-- Left navbar links -->
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+        </li>
+        <li class="nav-item d-none d-sm-inline-block">
+          <a href="../index3.html" class="nav-link">صفحه اصلی</a>
+        </li>
+        <li class="nav-item d-none d-sm-inline-block">
+          <a href="#" class="nav-link">تماس با ما</a>
+        </li>
+      </ul>
+
+      <!-- SEARCH FORM -->
+      <form class="form-inline ml-3">
+        <div class="input-group input-group-sm">
+          <input class="form-control form-control-navbar" type="search" placeholder="جست و جو" aria-label="جست و جو">
+          <div class="input-group-append">
+            <button class="btn btn-navbar" type="submit">
+              <i class="fas fa-search"></i>
+            </button>
+          </div>
+        </div>
+      </form>
+
+      <!-- Right navbar links -->
+      <ul class="navbar-nav ml-auto">
+        <!-- Messages Dropdown Menu -->
+        <li class="nav-item dropdown">
+          <a class="nav-link" data-toggle="dropdown" href="#">
+            <i class="far fa-comments"></i>
+            <span class="badge badge-danger navbar-badge">3</span>
+          </a>
+          <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+            <a href="#" class="dropdown-item">
+              <!-- Message Start -->
+              <div class="media">
+                <img src="../dist/img/user1-128x128.jpg" alt="User Avatar" class="img-size-50 mr-3 img-circle">
+                <div class="media-body">
+                  <h3 class="dropdown-item-title">
+                    رستم سهرابی
+                    <span class="float-right text-sm text-danger"><i class="fas fa-star"></i></span>
+                  </h3>
+                  <p class="text-sm">هر وقت می توانی با من تماس بگیر ...</p>
+                  <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 ساعت پیش</p>
+                </div>
+              </div>
+              <!-- Message End -->
+            </a>
+            <div class="dropdown-divider"></div>
+            <a href="#" class="dropdown-item">
+              <!-- Message Start -->
+              <div class="media">
+                <img src="../dist/img/user8-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3">
+                <div class="media-body">
+                  <h3 class="dropdown-item-title">
+                    ایمان لطفی
+                    <span class="float-right text-sm text-muted"><i class="fas fa-star"></i></span>
+                  </h3>
+                  <p class="text-sm">لطفا پیغام من رو نگاه کن</p>
+                  <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4  ساعت پیش</p>
+                </div>
+              </div>
+              <!-- Message End -->
+            </a>
+            <div class="dropdown-divider"></div>
+            <a href="#" class="dropdown-item">
+              <!-- Message Start -->
+              <div class="media">
+                <img src="../dist/img/user3-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3">
+                <div class="media-body">
+                  <h3 class="dropdown-item-title">
+                    مریم ایرانی
+                    <span class="float-right text-sm text-warning"><i class="fas fa-star"></i></span>
+                  </h3>
+                  <p class="text-sm">موضوع به اینجا می رود</p>
+                  <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4  ساعت پیش</p>
+                </div>
+              </div>
+              <!-- Message End -->
+            </a>
+            <div class="dropdown-divider"></div>
+            <a href="#" class="dropdown-item dropdown-footer">مشاهده همه پیغام ها</a>
+          </div>
+        </li>
+        <!-- Notifications Dropdown Menu -->
+        <li class="nav-item dropdown">
+          <a class="nav-link" data-toggle="dropdown" href="#">
+            <i class="far fa-bell"></i>
+            <span class="badge badge-warning navbar-badge">15</span>
+          </a>
+          <div class="dropdown-menu dropdown-menu-lg dropdown-menu-left">
+            <span class="dropdown-item dropdown-header">15 اطلاعیه</span>
+            <div class="dropdown-divider"></div>
+            <a href="#" class="dropdown-item">
+              <i class="fas fa-envelope mr-2"></i> 4 پیغام جدید
+              <span class="float-left text-muted text-sm">3 دقیقه</span>
+            </a>
+            <div class="dropdown-divider"></div>
+            <a href="#" class="dropdown-item">
+              <i class="fas fa-users mr-2"></i> 8 درخواست دوستی
+              <span class="float-left text-muted text-sm">12 ساعت</span>
+            </a>
+            <div class="dropdown-divider"></div>
+            <a href="#" class="dropdown-item">
+              <i class="fas fa-file mr-2"></i> 3 گزارش جدید
+              <span class="float-left text-muted text-sm">2 روز</span>
+            </a>
+            <div class="dropdown-divider"></div>
+            <a href="#" class="dropdown-item dropdown-footer">مشاهده همه اعلان ها</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-widget="fullscreen" href="#" role="button">
+            <i class="fas fa-expand-arrows-alt"></i>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-widget="control-sidebar" data-slide="true" href="#" role="button">
+            <i class="fas fa-th-large"></i>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <!-- /.navbar -->
+
+    <!-- Main Sidebar Container -->
+    <aside class="main-sidebar sidebar-dark-primary elevation-4">
+      <!-- Brand Logo -->
+      <a href="../index3.html" class="brand-link">
+        <img src="../dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
+          style="opacity: .8">
+        <span class="brand-text font-weight-light">پنل مدیریت</span>
+      </a>
+
+      <!-- Sidebar -->
+      <div class="sidebar">
+        <!-- Sidebar user panel (optional) -->
+        <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+          <div class="image">
+            <img src="../dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
+          </div>
+          <div class="info">
+            <a href="#" class="d-block">مهدی آمره</a>
+          </div>
+        </div>
+
+        <!-- SidebarSearch Form -->
+        <div class="form-inline">
+          <div class="input-group" data-widget="sidebar-search">
+            <input class="form-control form-control-sidebar" type="search" placeholder="جست و جو" aria-label="جست و جو">
+            <div class="input-group-append">
+              <button class="btn btn-sidebar">
+                <i class="fas fa-search fa-fw"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sidebar Menu -->
+        <nav class="mt-2">
+          <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+            <!-- Add icons to the links using the .nav-icon class
+             with font-awesome or any other icon font library -->
+            <li class="nav-item ">
+              <a href="#" class="nav-link">
+                <i class="nav-icon fas fa-tachometer-alt"></i>
+                <p>
+                  داشبورد
+                  <i class="right fas fa-angle-left"></i>
+                </p>
+              </a>
+              <ul class="nav nav-treeview">
+                <li class="nav-item">
+                  <a href="../index.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>داشبورد ۱</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="../index2.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>داشبورد ۲</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="../index3.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>داشبورد ۳</p>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a href="widgets.html" class="nav-link active">
+                <i class="nav-icon fas fa-th"></i>
+                <p>
+                  ابزارها
+                  <span class="right badge badge-danger">جدید</span>
+                </p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="nav-icon fas fa-copy"></i>
+                <p>
+                  طرح بندی ها
+                  <i class="fas fa-angle-left right"></i>
+                  <span class="badge badge-info right">6</span>
+                </p>
+              </a>
+              <ul class="nav nav-treeview">
+                <li class="nav-item">
+                  <a href="layout/top-nav.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>منوی بالا</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="layout/top-nav-sidebar.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>منوی بالا + سایدبار</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="layout/boxed.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>جعبه</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="layout/fixed-sidebar.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>سایدبار ثابت</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="layout/fixed-sidebar-custom.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>سایدبار ثابت <small>+ محیط شخصی</small></p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="layout/fixed-topnav.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>ناوبار ثابت</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="layout/fixed-footer.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>فوتر ثابت</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="layout/collapsed-sidebar.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>سایدبار بسته شده</p>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="nav-icon fas fa-chart-pie"></i>
+                <p>
+                  نمودارها
+                  <i class="right fas fa-angle-left"></i>
+                </p>
+              </a>
+              <ul class="nav nav-treeview">
+                <li class="nav-item">
+                  <a href="charts/chartjs.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>ChartJS</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="charts/flot.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>شناور</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="charts/inline.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>خطی</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="charts/uplot.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>uPlot</p>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="nav-icon fas fa-tree"></i>
+                <p>
+                  المنت های طراحی
+                  <i class="fas fa-angle-left right"></i>
+                </p>
+              </a>
+              <ul class="nav nav-treeview">
+                <li class="nav-item">
+                  <a href="UI/general.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>عمومی</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="UI/icons.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>آیکن ها</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="UI/buttons.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>دکمه ها</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="UI/sliders.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>اسلایدر ها</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="UI/modals.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>مدال ها و هشدارها</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="UI/navbar.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>ناوبار و تب ها</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="UI/timeline.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>تایم لاین</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="UI/ribbons.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>روبان ها</p>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="nav-icon fas fa-edit"></i>
+                <p>
+                  فرم ها
+                  <i class="fas fa-angle-left right"></i>
+                </p>
+              </a>
+              <ul class="nav nav-treeview">
+                <li class="nav-item">
+                  <a href="forms/general.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>المنت های عمومی</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="forms/advanced.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>المنت های پیشفرته</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="forms/editors.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>ویرایشگرها</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="forms/validation.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>اعتبارسنجی</p>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="nav-icon fas fa-table"></i>
+                <p>
+                  جداول
+                  <i class="fas fa-angle-left right"></i>
+                </p>
+              </a>
+              <ul class="nav nav-treeview">
+                <li class="nav-item">
+                  <a href="tables/simple.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>جداول ساده</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="tables/data.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>دیتا تیبل</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="tables/jsgrid.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>jsGrid</p>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-header">صفحات نمونه</li>
+            <li class="nav-item">
+              <a href="calendar.html" class="nav-link">
+                <i class="nav-icon far fa-calendar-alt"></i>
+                <p>
+                  تقویم
+                  <span class="badge badge-info right">2</span>
+                </p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="gallery.html" class="nav-link">
+                <i class="nav-icon far fa-image"></i>
+                <p>
+                  گالری
+                </p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="kanban.html" class="nav-link">
+                <i class="nav-icon fas fa-columns"></i>
+                <p>
+                  صفحه تسک ها
+                </p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="nav-icon far fa-envelope"></i>
+                <p>
+                  باکس ایمیل
+                  <i class="fas fa-angle-left right"></i>
+                </p>
+              </a>
+              <ul class="nav nav-treeview">
+                <li class="nav-item">
+                  <a href="mailbox/mailbox.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>صندوق ورودی</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="mailbox/compose.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>ایجاد ایمیل</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="mailbox/read-mail.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>خواندن</p>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="nav-icon fas fa-book"></i>
+                <p>
+                  صفحات
+                  <i class="fas fa-angle-left right"></i>
+                </p>
+              </a>
+              <ul class="nav nav-treeview">
+                <li class="nav-item">
+                  <a href="examples/invoice.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>پیش فاکتور</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="examples/profile.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>پروفایل کاربری</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="examples/e-commerce.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>صفحه یک محصول</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="examples/projects.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>پروژه ها</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="examples/project-add.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>افزودن پروژه</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="examples/project-edit.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>ویرایش پروژه</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="examples/project-detail.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>جزئیات پروژه</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="examples/contacts.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>ارتباط با ما</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="examples/faq.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>سوالات متداول</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="examples/contact-us.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>تماس با ما</p>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="nav-icon far fa-plus-square"></i>
+                <p>
+                  صفحات دیگر
+                  <i class="fas fa-angle-left right"></i>
+                </p>
+              </a>
+              <ul class="nav nav-treeview">
+                <li class="nav-item">
+                  <a href="#" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>
+                      ورود و عضویت نسخه ۱
+                      <i class="fas fa-angle-left right"></i>
+                    </p>
+                  </a>
+                  <ul class="nav nav-treeview">
+                    <li class="nav-item">
+                      <a href="examples/login.html" class="nav-link">
+                        <i class="far fa-circle nav-icon"></i>
+                        <p>ورود </p>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="examples/register.html" class="nav-link">
+                        <i class="far fa-circle nav-icon"></i>
+                        <p>عضویت</p>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="examples/forgot-password.html" class="nav-link">
+                        <i class="far fa-circle nav-icon"></i>
+                        <p>فراموشی گذرواژه </p>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="examples/recover-password.html" class="nav-link">
+                        <i class="far fa-circle nav-icon"></i>
+                        <p>بازیابی گذرواژه </p>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>
+                      ورود و عضویت نسخه ۲
+                      <i class="fas fa-angle-left right"></i>
+                    </p>
+                  </a>
+                  <ul class="nav nav-treeview">
+                    <li class="nav-item">
+                      <a href="examples/login-v2.html" class="nav-link">
+                        <i class="far fa-circle nav-icon"></i>
+                        <p>ورود</p>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="examples/register-v2.html" class="nav-link">
+                        <i class="far fa-circle nav-icon"></i>
+                        <p>عضویت</p>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="examples/forgot-password-v2.html" class="nav-link">
+                        <i class="far fa-circle nav-icon"></i>
+                        <p>فراموشی گذرواژه</p>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="examples/recover-password-v2.html" class="nav-link">
+                        <i class="far fa-circle nav-icon"></i>
+                        <p>بازیابی گذرواژه</p>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a href="examples/lockscreen.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>قفل کاربری</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="examples/legacy-user-menu.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>منوی کاربر قدیمی</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="examples/language-menu.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>منوی زبان ها</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="examples/404.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>خطای 404</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="examples/500.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>خطای 500</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="examples/pace.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Pace</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="examples/blank.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>ضفحه خالی</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="starter.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>سفحه شروع</p>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="nav-icon fas fa-search"></i>
+                <p>
+                  جست و جو
+                  <i class="fas fa-angle-left right"></i>
+                </p>
+              </a>
+              <ul class="nav nav-treeview">
+                <li class="nav-item">
+                  <a href="search/simple.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>جست و جوی ساده</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="search/enhanced.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>پیشرفته</p>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-header">سایر بخش ها</li>
+            <li class="nav-item">
+              <a href="iframe.html" class="nav-link">
+                <i class="nav-icon fas fa-ellipsis-h"></i>
+                <p>پلاگین IFrame با تب</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="https://adminlte.io/docs/3.1/" class="nav-link">
+                <i class="nav-icon fas fa-file"></i>
+                <p>مستندات</p>
+              </a>
+            </li>
+            <li class="nav-header">مثال چند سطحی</li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="fas fa-circle nav-icon"></i>
+                <p>سطح ۱</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="nav-icon fas fa-circle"></i>
+                <p>
+                  سطح ۱
+                  <i class="right fas fa-angle-left"></i>
+                </p>
+              </a>
+              <ul class="nav nav-treeview">
+                <li class="nav-item">
+                  <a href="#" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>سطح ۲</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>
+                      سطح ۲
+                      <i class="right fas fa-angle-left"></i>
+                    </p>
+                  </a>
+                  <ul class="nav nav-treeview">
+                    <li class="nav-item">
+                      <a href="#" class="nav-link">
+                        <i class="far fa-dot-circle nav-icon"></i>
+                        <p>سطح ۳</p>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#" class="nav-link">
+                        <i class="far fa-dot-circle nav-icon"></i>
+                        <p>سطح ۳</p>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#" class="nav-link">
+                        <i class="far fa-dot-circle nav-icon"></i>
+                        <p>سطح ۳</p>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>سطح ۲</p>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="fas fa-circle nav-icon"></i>
+                <p>سطح ۱</p>
+              </a>
+            </li>
+            <li class="nav-header">برچسب ها</li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="nav-icon far fa-circle text-danger"></i>
+                <p class="text">مهم</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="nav-icon far fa-circle text-warning"></i>
+                <p>هشدار</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="nav-icon far fa-circle text-info"></i>
+                <p>اطلاعات</p>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <!-- /.sidebar-menu -->
+      </div>
+      <!-- /.sidebar -->
+    </aside>
+
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper">
+      <!-- Content Header (Page header) -->
+      <section class="content-header">
+        <div class="container-fluid">
+          <div class="row mb-2">
+            <div class="col-sm-6">
+              <h1>ابزارها</h1>
+            </div>
+            <div class="col-sm-6">
+              <ol class="breadcrumb float-sm-left">
+                <li class="breadcrumb-item"><a href="#">صفحه اصلی</a></li>
+                <li class="breadcrumb-item active">ابزارها</li>
+              </ol>
+            </div>
+          </div>
+        </div><!-- /.container-fluid -->
+      </section>
+
+      <!-- Main content -->
+      <section class="content">
+        <div class="container-fluid">
+          <h5 class="mb-2">جعبه اطلاعات</h5>
+          <div class="row">
+            <div class="col-md-3 col-sm-6 col-12">
+              <div class="info-box">
+                <span class="info-box-icon bg-info"><i class="far fa-envelope"></i></span>
+
+                <div class="info-box-content">
+                  <span class="info-box-text">پیغام ها</span>
+                  <span class="info-box-number">1,410</span>
+                </div>
+                <!-- /.info-box-content -->
+              </div>
+              <!-- /.info-box -->
+            </div>
+            <!-- /.col -->
+            <div class="col-md-3 col-sm-6 col-12">
+              <div class="info-box">
+                <span class="info-box-icon bg-success"><i class="far fa-flag"></i></span>
+
+                <div class="info-box-content">
+                  <span class="info-box-text">علاقه مندی ها</span>
+                  <span class="info-box-number">410</span>
+                </div>
+                <!-- /.info-box-content -->
+              </div>
+              <!-- /.info-box -->
+            </div>
+            <!-- /.col -->
+            <div class="col-md-3 col-sm-6 col-12">
+              <div class="info-box">
+                <span class="info-box-icon bg-warning"><i class="far fa-copy"></i></span>
+
+                <div class="info-box-content">
+                  <span class="info-box-text">آپلود ها</span>
+                  <span class="info-box-number">13,648</span>
+                </div>
+                <!-- /.info-box-content -->
+              </div>
+              <!-- /.info-box -->
+            </div>
+            <!-- /.col -->
+            <div class="col-md-3 col-sm-6 col-12">
+              <div class="info-box">
+                <span class="info-box-icon bg-danger"><i class="far fa-star"></i></span>
+
+                <div class="info-box-content">
+                  <span class="info-box-text">پسند ها</span>
+                  <span class="info-box-number">93,139</span>
+                </div>
+                <!-- /.info-box-content -->
+              </div>
+              <!-- /.info-box -->
+            </div>
+            <!-- /.col -->
+          </div>
+          <!-- /.row -->
+
+          <!-- =========================================================== -->
+          <h5 class="mb-2">جعبه اطلاعات با سایه های سفارشی <small><i>با استفاده از نرم افزار Shadow
+                Bootstrap</i></small></h5>
+          <div class="row">
+            <div class="col-md-3 col-sm-6 col-12">
+              <div class="info-box shadow-none">
+                <span class="info-box-icon bg-info"><i class="far fa-envelope"></i></span>
+
+                <div class="info-box-content">
+                  <span class="info-box-text">سایه</span>
+                  <span class="info-box-number">بدون سایه</span>
+                </div>
+                <!-- /.info-box-content -->
+              </div>
+              <!-- /.info-box -->
+            </div>
+            <!-- /.col -->
+            <div class="col-md-3 col-sm-6 col-12">
+              <div class="info-box shadow-sm">
+                <span class="info-box-icon bg-success"><i class="far fa-flag"></i></span>
+
+                <div class="info-box-content">
+                  <span class="info-box-text">سایه</span>
+                  <span class="info-box-number">کوچیک</span>
+                </div>
+                <!-- /.info-box-content -->
+              </div>
+              <!-- /.info-box -->
+            </div>
+            <!-- /.col -->
+            <div class="col-md-3 col-sm-6 col-12">
+              <div class="info-box shadow">
+                <span class="info-box-icon bg-warning"><i class="far fa-copy"></i></span>
+
+                <div class="info-box-content">
+                  <span class="info-box-text">سایه</span>
+                  <span class="info-box-number">منظم</span>
+                </div>
+                <!-- /.info-box-content -->
+              </div>
+              <!-- /.info-box -->
+            </div>
+            <!-- /.col -->
+            <div class="col-md-3 col-sm-6 col-12">
+              <div class="info-box shadow-lg">
+                <span class="info-box-icon bg-danger"><i class="far fa-star"></i></span>
+
+                <div class="info-box-content">
+                  <span class="info-box-text">سایه</span>
+                  <span class="info-box-number">بزرگ</span>
+                </div>
+                <!-- /.info-box-content -->
+              </div>
+              <!-- /.info-box -->
+            </div>
+            <!-- /.col -->
+          </div>
+          <!-- /.row -->
+
+          <!-- =========================================================== -->
+          <h5 class="mt-4 mb-2">جعبه اطلاعات با <code>bg-*</code></h5>
+          <div class="row">
+            <div class="col-md-3 col-sm-6 col-12">
+              <div class="info-box bg-info">
+                <span class="info-box-icon"><i class="far fa-bookmark"></i></span>
+
+                <div class="info-box-content">
+                  <span class="info-box-text">علاقه مندی ها</span>
+                  <span class="info-box-number">41,410</span>
+
+                  <div class="progress">
+                    <div class="progress-bar" style="width: 70%"></div>
+                  </div>
+                  <span class="progress-description">
+                    70% رشد در 30 روز
+                  </span>
+                </div>
+                <!-- /.info-box-content -->
+              </div>
+              <!-- /.info-box -->
+            </div>
+            <!-- /.col -->
+            <div class="col-md-3 col-sm-6 col-12">
+              <div class="info-box bg-success">
+                <span class="info-box-icon"><i class="far fa-thumbs-up"></i></span>
+
+                <div class="info-box-content">
+                  <span class="info-box-text">پسند ها</span>
+                  <span class="info-box-number">41,410</span>
+
+                  <div class="progress">
+                    <div class="progress-bar" style="width: 70%"></div>
+                  </div>
+                  <span class="progress-description">
+                    70% رشد در 30 روز
+                  </span>
+                </div>
+                <!-- /.info-box-content -->
+              </div>
+              <!-- /.info-box -->
+            </div>
+            <!-- /.col -->
+            <div class="col-md-3 col-sm-6 col-12">
+              <div class="info-box bg-warning">
+                <span class="info-box-icon"><i class="far fa-calendar-alt"></i></span>
+
+                <div class="info-box-content">
+                  <span class="info-box-text">رویداد ها</span>
+                  <span class="info-box-number">41,410</span>
+
+                  <div class="progress">
+                    <div class="progress-bar" style="width: 70%"></div>
+                  </div>
+                  <span class="progress-description">
+                    70% رشد در 30 روز
+                  </span>
+                </div>
+                <!-- /.info-box-content -->
+              </div>
+              <!-- /.info-box -->
+            </div>
+            <!-- /.col -->
+            <div class="col-md-3 col-sm-6 col-12">
+              <div class="info-box bg-danger">
+                <span class="info-box-icon"><i class="fas fa-comments"></i></span>
+
+                <div class="info-box-content">
+                  <span class="info-box-text">نظرات</span>
+                  <span class="info-box-number">41,410</span>
+
+                  <div class="progress">
+                    <div class="progress-bar" style="width: 70%"></div>
+                  </div>
+                  <span class="progress-description">
+                    70% رشد در 30 روز
+                  </span>
+                </div>
+                <!-- /.info-box-content -->
+              </div>
+              <!-- /.info-box -->
+            </div>
+            <!-- /.col -->
+          </div>
+          <!-- /.row -->
+
+          <!-- =========================================================== -->
+          <h5 class="mt-4 mb-2">جعبه اطلاعات با <code>bg-gradient-*</code></h5>
+          <div class="row">
+            <div class="col-md-3 col-sm-6 col-12">
+              <div class="info-box bg-gradient-info">
+                <span class="info-box-icon"><i class="far fa-bookmark"></i></span>
+
+                <div class="info-box-content">
+                  <span class="info-box-text">علاقه مندی ها</span>
+                  <span class="info-box-number">41,410</span>
+
+                  <div class="progress">
+                    <div class="progress-bar" style="width: 70%"></div>
+                  </div>
+                  <span class="progress-description">
+                    70% رشد در 30 روز
+                  </span>
+                </div>
+                <!-- /.info-box-content -->
+              </div>
+              <!-- /.info-box -->
+            </div>
+            <!-- /.col -->
+            <div class="col-md-3 col-sm-6 col-12">
+              <div class="info-box bg-gradient-success">
+                <span class="info-box-icon"><i class="far fa-thumbs-up"></i></span>
+
+                <div class="info-box-content">
+                  <span class="info-box-text">پسند ها</span>
+                  <span class="info-box-number">41,410</span>
+
+                  <div class="progress">
+                    <div class="progress-bar" style="width: 70%"></div>
+                  </div>
+                  <span class="progress-description">
+                    70% رشد در 30 روز
+                  </span>
+                </div>
+                <!-- /.info-box-content -->
+              </div>
+              <!-- /.info-box -->
+            </div>
+            <!-- /.col -->
+            <div class="col-md-3 col-sm-6 col-12">
+              <div class="info-box bg-gradient-warning">
+                <span class="info-box-icon"><i class="far fa-calendar-alt"></i></span>
+
+                <div class="info-box-content">
+                  <span class="info-box-text">رویداد ها</span>
+                  <span class="info-box-number">41,410</span>
+
+                  <div class="progress">
+                    <div class="progress-bar" style="width: 70%"></div>
+                  </div>
+                  <span class="progress-description">
+                    70% رشد در 30 روز
+                  </span>
+                </div>
+                <!-- /.info-box-content -->
+              </div>
+              <!-- /.info-box -->
+            </div>
+            <!-- /.col -->
+            <div class="col-md-3 col-sm-6 col-12">
+              <div class="info-box bg-gradient-danger">
+                <span class="info-box-icon"><i class="fas fa-comments"></i></span>
+
+                <div class="info-box-content">
+                  <span class="info-box-text">نظرات</span>
+                  <span class="info-box-number">41,410</span>
+
+                  <div class="progress">
+                    <div class="progress-bar" style="width: 70%"></div>
+                  </div>
+                  <span class="progress-description">
+                    70% رشد در 30 روز
+                  </span>
+                </div>
+                <!-- /.info-box-content -->
+              </div>
+              <!-- /.info-box -->
+            </div>
+            <!-- /.col -->
+          </div>
+          <!-- /.row -->
+
+          <!-- =========================================================== -->
+
+          <!-- Small Box (Stat card) -->
+          <h5 class="mb-2 mt-4">جعبه کوچک</h5>
+          <div class="row">
+            <div class="col-lg-3 col-6">
+              <!-- small card -->
+              <div class="small-box bg-info">
+                <div class="inner">
+                  <h3>150</h3>
+
+                  <p>سفارش جدید</p>
+                </div>
+                <div class="icon">
+                  <i class="fas fa-shopping-cart"></i>
+                </div>
+                <a href="#" class="small-box-footer">
+                  اطلاعات بیشتر <i class="fas fa-arrow-circle-right"></i>
+                </a>
+              </div>
+            </div>
+            <!-- ./col -->
+            <div class="col-lg-3 col-6">
+              <!-- small card -->
+              <div class="small-box bg-success">
+                <div class="inner">
+                  <h3>53<sup style="font-size: 20px">%</sup></h3>
+
+                  <p>نرخ رشد</p>
+                </div>
+                <div class="icon">
+                  <i class="ion ion-stats-bars"></i>
+                </div>
+                <a href="#" class="small-box-footer">
+                  اطلاعات بیشتر <i class="fas fa-arrow-circle-right"></i>
+                </a>
+              </div>
+            </div>
+            <!-- ./col -->
+            <div class="col-lg-3 col-6">
+              <!-- small card -->
+              <div class="small-box bg-warning">
+                <div class="inner">
+                  <h3>44</h3>
+
+                  <p>کاربر عضو شده</p>
+                </div>
+                <div class="icon">
+                  <i class="fas fa-user-plus"></i>
+                </div>
+                <a href="#" class="small-box-footer">
+                  اطلاعات بیشتر <i class="fas fa-arrow-circle-right"></i>
+                </a>
+              </div>
+            </div>
+            <!-- ./col -->
+            <div class="col-lg-3 col-6">
+              <!-- small card -->
+              <div class="small-box bg-danger">
+                <div class="inner">
+                  <h3>65</h3>
+
+                  <p>بازدید ها</p>
+                </div>
+                <div class="icon">
+                  <i class="fas fa-chart-pie"></i>
+                </div>
+                <a href="#" class="small-box-footer">
+                  اطلاعات بیشتر <i class="fas fa-arrow-circle-right"></i>
+                </a>
+              </div>
+            </div>
+            <!-- ./col -->
+          </div>
+          <!-- /.row -->
+
+          <!-- Small Box (Stat card) -->
+          <div class="row">
+            <div class="col-lg-3 col-6">
+              <!-- small card -->
+              <div class="small-box bg-info">
+                <!-- Loading (remove the following to stop the loading)-->
+                <div class="overlay">
+                  <i class="fas fa-3x fa-sync-alt"></i>
+                </div>
+                <!-- end loading -->
+                <div class="inner">
+                  <h3>150</h3>
+
+                  <p>سفارش جدید</p>
+                </div>
+                <div class="icon">
+                  <i class="fas fa-shopping-cart"></i>
+                </div>
+                <a href="#" class="small-box-footer">
+                  اطلاعات بیشتر<i class="fas fa-arrow-circle-right"></i>
+                </a>
+              </div>
+            </div>
+            <!-- ./col -->
+            <div class="col-lg-3 col-6">
+              <!-- small card -->
+              <div class="small-box bg-success">
+                <!-- Loading (remove the following to stop the loading)-->
+                <div class="overlay dark">
+                  <i class="fas fa-3x fa-sync-alt"></i>
+                </div>
+                <!-- end loading -->
+                <div class="inner">
+                  <h3>53<sup style="font-size: 20px">%</sup></h3>
+
+                  <p>نرخ رشد</p>
+                </div>
+                <div class="icon">
+                  <i class="ion ion-stats-bars"></i>
+                </div>
+                <a href="#" class="small-box-footer">
+                  اطلاعات بیشتر <i class="fas fa-arrow-circle-right"></i>
+                </a>
+              </div>
+            </div>
+            <!-- ./col -->
+          </div>
+          <!-- /.row -->
+
+          <!-- =========================================================== -->
+          <h4 class="mb-2 mt-4">بسته ها</h4>
+          <h5 class="mb-2">توانایی ها</h5>
+          <div class="row">
+            <div class="col-md-3">
+              <div class="card card-primary collapsed-card">
+                <div class="card-header">
+                  <h3 class="card-title">قابل باز شدن</h3>
+
+                  <div class="card-tools">
+                    <button type="button" class="btn btn-tool" data-card-widget="collapse"><i class="fas fa-plus"></i>
+                    </button>
+                  </div>
+                  <!-- /.card-tools -->
+                </div>
+                <!-- /.card-header -->
+                <div class="card-body">
+                  این یک متن تست برای شما می باشد
+                </div>
+                <!-- /.card-body -->
+              </div>
+              <!-- /.card -->
+            </div>
+            <!-- /.col -->
+            <div class="col-md-3">
+              <div class="card card-success">
+                <div class="card-header">
+                  <h3 class="card-title">قابل بسته شدن</h3>
+
+                  <div class="card-tools">
+                    <button type="button" class="btn btn-tool" data-card-widget="collapse"><i class="fas fa-minus"></i>
+                    </button>
+                  </div>
+                  <!-- /.card-tools -->
+                </div>
+                <!-- /.card-header -->
+                <div class="card-body">
+                  این یک متن تست برای شما می باشد
+                </div>
+                <!-- /.card-body -->
+              </div>
+              <!-- /.card -->
+            </div>
+            <!-- /.col -->
+            <div class="col-md-3">
+              <div class="card card-warning">
+                <div class="card-header">
+                  <h3 class="card-title">قابل حذف شدن</h3>
+
+                  <div class="card-tools">
+                    <button type="button" class="btn btn-tool" data-card-widget="remove"><i class="fas fa-times"></i>
+                    </button>
+                  </div>
+                  <!-- /.card-tools -->
+                </div>
+                <!-- /.card-header -->
+                <div class="card-body">
+                  این یک متن تست برای شما می باشد
+                </div>
+                <!-- /.card-body -->
+              </div>
+              <!-- /.card -->
+            </div>
+            <!-- /.col -->
+            <div class="col-md-3">
+              <div class="card card-danger">
+                <div class="card-header">
+                  <h3 class="card-title">قابل بزرگ شدن</h3>
+
+                  <div class="card-tools">
+                    <button type="button" class="btn btn-tool" data-card-widget="maximize"><i class="fas fa-expand"></i>
+                    </button>
+                  </div>
+                  <!-- /.card-tools -->
+                </div>
+                <!-- /.card-header -->
+                <div class="card-body">
+                  این یک متن تست برای شما می باشد
+                </div>
+                <!-- /.card-body -->
+              </div>
+              <!-- /.card -->
+            </div>
+            <!-- /.col -->
+          </div>
+          <!-- /.row -->
+
+          <div class="row">
+            <div class="col-md-3">
+              <div class="card card-primary">
+                <div class="card-header">
+                  <h3 class="card-title">تازه سازی</h3>
+
+                  <div class="card-tools">
+                    <button type="button" class="btn btn-tool" data-card-widget="card-refresh"
+                      data-source="widgets.html" data-source-selector="#card-refresh-content">
+                      <i class="fas fa-sync-alt"></i>
+                    </button>
+                  </div>
+                  <!-- /.card-tools -->
+                </div>
+                <!-- /.card-header -->
+                <div class="card-body">
+                  این یک متن تست برای شما می باشد
+                </div>
+                <!-- /.card-body -->
+              </div>
+              <!-- /.card -->
+              <div class="d-none" id="card-refresh-content">
+                این یک متن تست برای شما بعد از تازه سازی می باشد
+              </div>
+            </div>
+            <!-- /.col -->
+            <div class="col-md-3">
+              <div class="card card-success">
+                <div class="card-header">
+                  <h3 class="card-title">با تمام ویژگی ها</h3>
+
+                  <div class="card-tools">
+                    <button type="button" class="btn btn-tool" data-card-widget="card-refresh"
+                      data-source="widgets.html" data-source-selector="#card-refresh-content" data-load-on-init="false">
+                      <i class="fas fa-sync-alt"></i>
+                    </button>
+                    <button type="button" class="btn btn-tool" data-card-widget="maximize">
+                      <i class="fas fa-expand"></i>
+                    </button>
+                    <button type="button" class="btn btn-tool" data-card-widget="collapse">
+                      <i class="fas fa-minus"></i>
+                    </button>
+                    <button type="button" class="btn btn-tool" data-card-widget="remove">
+                      <i class="fas fa-times"></i>
+                    </button>
+                  </div>
+                  <!-- /.card-tools -->
+                </div>
+                <!-- /.card-header -->
+                <div class="card-body">
+                  این یک متن تست برای شما می باشد
+                </div>
+                <!-- /.card-body -->
+              </div>
+              <!-- /.card -->
+            </div>
+            <!-- /.col -->
+            <div class="col-md-3">
+              <div class="card card-warning">
+                <div class="card-header">
+                  <h3 class="card-title">وضعیت لودینگ</h3>
+                </div>
+                <div class="card-body">
+                  این یک متن تست برای شما می باشد
+                </div>
+                <!-- /.card-body -->
+                <!-- Loading (remove the following to stop the loading)-->
+                <div class="overlay">
+                  <i class="fas fa-2x fa-sync-alt"></i>
+                </div>
+                <!-- end loading -->
+              </div>
+              <!-- /.card -->
+            </div>
+            <!-- /.col -->
+            <div class="col-md-3">
+              <div class="card card-danger">
+                <div class="card-header">
+                  <h3 class="card-title">وضعیت لودینگ (تیره)</h3>
+                </div>
+                <div class="card-body">
+                  این یک متن تست برای شما می باشد
+                </div>
+                <!-- /.card-body -->
+                <!-- Loading (remove the following to stop the loading)-->
+                <div class="overlay dark">
+                  <i class="fas fa-2x fa-sync-alt"></i>
+                </div>
+                <!-- end loading -->
+              </div>
+              <!-- /.card -->
+            </div>
+            <!-- /.col -->
+          </div>
+          <!-- /.row -->
+
+          <!-- =========================================================== -->
+          <h5 class="mb-2">تنوع رنگی سایه ها <small><i>با استفاده از ابزار سایه بوت استرپ</i></small></h5>
+          <div class="row">
+            <div class="col-md-3">
+              <div class="card card-primary shadow-none">
+                <div class="card-header">
+                  <h3 class="card-title">بدون سایه</h3>
+
+                  <div class="card-tools">
+                    <button type="button" class="btn btn-tool" data-card-widget="collapse">
+                      <i class="fas fa-minus"></i>
+                    </button>
+                  </div>
+                  <!-- /.card-tools -->
+                </div>
+                <!-- /.card-header -->
+                <div class="card-body">
+                  این یک متن تست برای شما می باشد
+                </div>
+                <!-- /.card-body -->
+              </div>
+              <!-- /.card -->
+            </div>
+            <!-- /.col -->
+            <div class="col-md-3">
+              <div class="card card-success shadow-sm">
+                <div class="card-header">
+                  <h3 class="card-title">سایه - کوچک</h3>
+
+                  <div class="card-tools">
+                    <button type="button" class="btn btn-tool" data-card-widget="collapse">
+                      <i class="fas fa-minus"></i>
+                    </button>
+                  </div>
+                  <!-- /.card-tools -->
+                </div>
+                <!-- /.card-header -->
+                <div class="card-body">
+                  این یک متن تست برای شما می باشد
+                </div>
+                <!-- /.card-body -->
+              </div>
+              <!-- /.card -->
+            </div>
+            <!-- /.col -->
+            <div class="col-md-3">
+              <div class="card card-warning shadow">
+                <div class="card-header">
+                  <h3 class="card-title">سایه - منظم</h3>
+
+                  <div class="card-tools">
+                    <button type="button" class="btn btn-tool" data-card-widget="remove"><i class="fas fa-times"></i>
+                    </button>
+                  </div>
+                  <!-- /.card-tools -->
+                </div>
+                <!-- /.card-header -->
+                <div class="card-body">
+                  این یک متن تست برای شما می باشد
+                </div>
+                <!-- /.card-body -->
+              </div>
+              <!-- /.card -->
+            </div>
+            <!-- /.col -->
+            <div class="col-md-3">
+              <div class="card card-danger shadow-lg">
+                <div class="card-header">
+                  <h3 class="card-title">سایه - بزرگ</h3>
+
+                  <div class="card-tools">
+                    <button type="button" class="btn btn-tool" data-card-widget="maximize"><i class="fas fa-expand"></i>
+                    </button>
+                  </div>
+                  <!-- /.card-tools -->
+                </div>
+                <!-- /.card-header -->
+                <div class="card-body">
+                  این یک متن تست برای شما می باشد
+                </div>
+                <!-- /.card-body -->
+              </div>
+              <!-- /.card -->
+            </div>
+            <!-- /.col -->
+          </div>
+          <!-- /.row -->
+
+          <!-- =========================================================== -->
+
+          <h5 class="mb-2">تنوع رنگی</h5>
+
+          <div class="row">
+            <div class="col-md-3">
+              <div class="card card-primary">
+                <div class="card-header">
+                  <h3 class="card-title">اصلی</h3>
+
+                  <div class="card-tools">
+                    <button type="button" class="btn btn-tool" data-card-widget="collapse">
+                      <i class="fas fa-minus"></i>
+                    </button>
+                  </div>
+                  <!-- /.card-tools -->
+                </div>
+                <!-- /.card-header -->
+                <div class="card-body">
+                  این یک متن تست برای شما می باشد
+                </div>
+                <!-- /.card-body -->
+              </div>
+              <!-- /.card -->
+            </div>
+            <!-- /.col -->
+            <div class="col-md-3">
+              <div class="card card-success">
+                <div class="card-header">
+                  <h3 class="card-title">موفقیت آمیز</h3>
+
+                  <div class="card-tools">
+                    <button type="button" class="btn btn-tool" data-card-widget="remove"><i class="fas fa-times"></i>
+                    </button>
+                  </div>
+                  <!-- /.card-tools -->
+                </div>
+                <!-- /.card-header -->
+                <div class="card-body">
+                  این یک متن تست برای شما می باشد
+                </div>
+                <!-- /.card-body -->
+              </div>
+              <!-- /.card -->
+            </div>
+            <!-- /.col -->
+            <div class="col-md-3">
+              <div class="card card-warning">
+                <div class="card-header">
+                  <h3 class="card-title">هشدار</h3>
+
+                  <div class="card-tools">
+                    <button type="button" class="btn btn-tool" data-card-widget="collapse">
+                      <i class="fas fa-minus"></i>
+                    </button>
+                  </div>
+                  <!-- /.card-tools -->
+                </div>
+                <!-- /.card-header -->
+                <div class="card-body">
+                  این یک متن تست برای شما می باشد
+                </div>
+                <!-- /.card-body -->
+              </div>
+              <!-- /.card -->
+            </div>
+            <!-- /.col -->
+            <div class="col-md-3">
+              <div class="card card-danger">
+                <div class="card-header">
+                  <h3 class="card-title">خطر</h3>
+                </div>
+                <div class="card-body">
+                  این یک متن تست برای شما می باشد
+                </div>
+                <!-- /.card-body -->
+              </div>
+              <!-- /.card -->
+            </div>
+            <!-- /.col -->
+          </div>
+          <!-- /.row -->
+
+          <div class="row">
+            <div class="col-md-3">
+              <div class="card card-outline card-primary">
+                <div class="card-header">
+                  <h3 class="card-title">اصلی با خط خارجی</h3>
+
+                  <div class="card-tools">
+                    <button type="button" class="btn btn-tool" data-card-widget="collapse">
+                      <i class="fas fa-minus"></i>
+                    </button>
+                  </div>
+                  <!-- /.card-tools -->
+                </div>
+                <!-- /.card-header -->
+                <div class="card-body">
+                  این یک متن تست برای شما می باشد
+                </div>
+                <!-- /.card-body -->
+              </div>
+              <!-- /.card -->
+            </div>
+            <!-- /.col -->
+            <div class="col-md-3">
+              <div class="card card-outline card-success">
+                <div class="card-header">
+                  <h3 class="card-title">موفقیت آمیز با خط خارجی</h3>
+
+                  <div class="card-tools">
+                    <button type="button" class="btn btn-tool" data-card-widget="remove"><i class="fas fa-times"></i>
+                    </button>
+                  </div>
+                  <!-- /.card-tools -->
+                </div>
+                <!-- /.card-header -->
+                <div class="card-body">
+                  این یک متن تست برای شما می باشد
+                </div>
+                <!-- /.card-body -->
+              </div>
+              <!-- /.card -->
+            </div>
+            <!-- /.col -->
+            <div class="col-md-3">
+              <div class="card card-outline card-warning">
+                <div class="card-header">
+                  <h3 class="card-title">هشدار با خط خارجی</h3>
+
+                  <div class="card-tools">
+                    <button type="button" class="btn btn-tool" data-card-widget="collapse">
+                      <i class="fas fa-minus"></i>
+                    </button>
+                  </div>
+                  <!-- /.card-tools -->
+                </div>
+                <!-- /.card-header -->
+                <div class="card-body">
+                  این یک متن تست برای شما می باشد
+                </div>
+                <!-- /.card-body -->
+              </div>
+              <!-- /.card -->
+            </div>
+            <!-- /.col -->
+            <div class="col-md-3">
+              <div class="card card-outline card-danger">
+                <div class="card-header">
+                  <h3 class="card-title">خطر با خط خارجی</h3>
+                </div>
+                <div class="card-body">
+                  این یک متن تست برای شما می باشد
+                </div>
+                <!-- /.card-body -->
+              </div>
+              <!-- /.card -->
+            </div>
+            <!-- /.col -->
+          </div>
+          <!-- /.row -->
+
+          <div class="row">
+            <div class="col-md-3">
+              <div class="card bg-primary">
+                <div class="card-header">
+                  <h3 class="card-title">اصلی</h3>
+
+                  <div class="card-tools">
+                    <button type="button" class="btn btn-tool" data-card-widget="collapse">
+                      <i class="fas fa-minus"></i>
+                    </button>
+                  </div>
+                  <!-- /.card-tools -->
+                </div>
+                <!-- /.card-header -->
+                <div class="card-body">
+                  این یک متن تست برای شما می باشد
+                </div>
+                <!-- /.card-body -->
+              </div>
+              <!-- /.card -->
+            </div>
+            <!-- /.col -->
+            <div class="col-md-3">
+              <div class="card bg-success">
+                <div class="card-header">
+                  <h3 class="card-title">موفقیت آمیز</h3>
+
+                  <div class="card-tools">
+                    <button type="button" class="btn btn-tool" data-card-widget="remove"><i class="fas fa-times"></i>
+                    </button>
+                  </div>
+                  <!-- /.card-tools -->
+                </div>
+                <!-- /.card-header -->
+                <div class="card-body">
+                  این یک متن تست برای شما می باشد
+                </div>
+                <!-- /.card-body -->
+              </div>
+              <!-- /.card -->
+            </div>
+            <!-- /.col -->
+            <div class="col-md-3">
+              <div class="card bg-warning">
+                <div class="card-header">
+                  <h3 class="card-title">هشدار</h3>
+
+                  <div class="card-tools">
+                    <button type="button" class="btn btn-tool" data-card-widget="collapse">
+                      <i class="fas fa-minus"></i>
+                    </button>
+                  </div>
+                  <!-- /.card-tools -->
+                </div>
+                <!-- /.card-header -->
+                <div class="card-body">
+                  این یک متن تست برای شما می باشد
+                </div>
+                <!-- /.card-body -->
+              </div>
+              <!-- /.card -->
+            </div>
+            <!-- /.col -->
+            <div class="col-md-3">
+              <div class="card bg-danger">
+                <div class="card-header">
+                  <h3 class="card-title">خطر</h3>
+                </div>
+                <div class="card-body">
+                  این یک متن تست برای شما می باشد
+                </div>
+                <!-- /.card-body -->
+              </div>
+              <!-- /.card -->
+            </div>
+            <!-- /.col -->
+          </div>
+          <!-- /.row -->
+
+          <div class="row">
+            <div class="col-md-3">
+              <div class="card bg-gradient-primary">
+                <div class="card-header">
+                  <h3 class="card-title">اصلی </h3>
+
+                  <div class="card-tools">
+                    <button type="button" class="btn btn-tool" data-card-widget="collapse">
+                      <i class="fas fa-minus"></i>
+                    </button>
+                  </div>
+                  <!-- /.card-tools -->
+                </div>
+                <!-- /.card-header -->
+                <div class="card-body">
+                  این یک متن تست برای شما می باشد
+                </div>
+                <!-- /.card-body -->
+              </div>
+              <!-- /.card -->
+            </div>
+            <!-- /.col -->
+            <div class="col-md-3">
+              <div class="card bg-gradient-success">
+                <div class="card-header">
+                  <h3 class="card-title">موفقیت آمیز با گرادیانت</h3>
+
+                  <div class="card-tools">
+                    <button type="button" class="btn btn-tool" data-card-widget="remove"><i class="fas fa-times"></i>
+                    </button>
+                  </div>
+                  <!-- /.card-tools -->
+                </div>
+                <!-- /.card-header -->
+                <div class="card-body">
+                  این یک متن تست برای شما می باشد
+                </div>
+                <!-- /.card-body -->
+              </div>
+              <!-- /.card -->
+            </div>
+            <!-- /.col -->
+            <div class="col-md-3">
+              <div class="card bg-gradient-warning">
+                <div class="card-header">
+                  <h3 class="card-title">هشدار با گرادیانت</h3>
+
+                  <div class="card-tools">
+                    <button type="button" class="btn btn-tool" data-card-widget="collapse">
+                      <i class="fas fa-minus"></i>
+                    </button>
+                  </div>
+                  <!-- /.card-tools -->
+                </div>
+                <!-- /.card-header -->
+                <div class="card-body">
+                  این یک متن تست برای شما می باشد
+                </div>
+                <!-- /.card-body -->
+              </div>
+              <!-- /.card -->
+            </div>
+            <!-- /.col -->
+            <div class="col-md-3">
+              <div class="card bg-gradient-danger">
+                <div class="card-header">
+                  <h3 class="card-title">اخطار با گرادیانت</h3>
+                </div>
+                <div class="card-body">
+                  این یک متن تست برای شما می باشد
+                </div>
+                <!-- /.card-body -->
+              </div>
+              <!-- /.card -->
+            </div>
+            <!-- /.col -->
+          </div>
+          <!-- /.row -->
+
+          <!-- =========================================================== -->
+
+          <!-- چت مستقیم -->
+          <h4 class="mt-4 mb-2">چت و گفتگو</h4>
+          <div class="row">
+            <div class="col-md-3">
+              <!-- چت مستقیم PRIMARY -->
+              <div class="card card-primary card-outline direct-chat direct-chat-primary">
+                <div class="card-header">
+                  <h3 class="card-title">چت مستقیم</h3>
+
+                  <div class="card-tools">
+                    <span title="3 New Messages" class="badge bg-primary">3</span>
+                    <button type="button" class="btn btn-tool" data-card-widget="collapse">
+                      <i class="fas fa-minus"></i>
+                    </button>
+                    <button type="button" class="btn btn-tool" title="Contacts" data-widget="chat-pane-toggle">
+                      <i class="fas fa-comments"></i>
+                    </button>
+                    <button type="button" class="btn btn-tool" data-card-widget="remove">
+                      <i class="fas fa-times"></i>
+                    </button>
+                  </div>
+                </div>
+                <!-- /.card-header -->
+                <div class="card-body">
+                  <!-- Conversations are loaded here -->
+                  <div class="direct-chat-messages">
+                    <!-- Message. Default to the left -->
+                    <div class="direct-chat-msg">
+                      <div class="direct-chat-infos clearfix">
+                        <span class="direct-chat-name float-left">مهدی آمره</span>
+                        <span class="direct-chat-timestamp float-right">23 تیر 2:00 بعدازظهر</span>
+                      </div>
+                      <!-- /.direct-chat-infos -->
+                      <img class="direct-chat-img" src="../dist/img/user1-128x128.jpg" alt="Message User Image">
+                      <!-- /.direct-chat-img -->
+                      <div class="direct-chat-text">
+                        این قالب واقعا رایگان هست؟ مکن که باورم نمیشه!
+                      </div>
+                      <!-- /.direct-chat-text -->
+                    </div>
+                    <!-- /.direct-chat-msg -->
+
+                    <!-- Message to the right -->
+                    <div class="direct-chat-msg right">
+                      <div class="direct-chat-infos clearfix">
+                        <span class="direct-chat-name float-right">سارا حسینی</span>
+                        <span class="direct-chat-timestamp float-left">23 تیر 3:00 بعدازظهر</span>
+                      </div>
+                      <!-- /.direct-chat-infos -->
+                      <img class="direct-chat-img" src="../dist/img/user3-128x128.jpg" alt="Message User Image">
+                      <!-- /.direct-chat-img -->
+                      <div class="direct-chat-text">
+                        پیشنهاد می کنم بهتره این رو باور کنید!
+                      </div>
+                      <!-- /.direct-chat-text -->
+                    </div>
+                    <!-- /.direct-chat-msg -->
+                  </div>
+                  <!--/.direct-chat-messages-->
+
+                  <!-- Contacts are loaded here -->
+                  <div class="direct-chat-contacts">
+                    <ul class="contacts-list">
+                      <li>
+                        <a href="#">
+                          <img class="contacts-list-img" src="../dist/img/user1-128x128.jpg" alt="User Avatar">
+
+                          <div class="contacts-list-info">
+                            <span class="contacts-list-name">
+                              Count Dracula
+                              <small class="contacts-list-date float-right">2/28/2015</small>
+                            </span>
+                            <span class="contacts-list-msg">How have you been? I was...</span>
+                          </div>
+                          <!-- /.contacts-list-info -->
+                        </a>
+                      </li>
+                      <!-- End Contact Item -->
+                    </ul>
+                    <!-- /.contatcts-list -->
+                  </div>
+                  <!-- /.direct-chat-pane -->
+                </div>
+                <!-- /.card-body -->
+                <div class="card-footer">
+                  <form action="#" method="post">
+                    <div class="input-group">
+                      <input type="text" name="message" placeholder="پیغام خود را بنویسید" class="form-control">
+                      <span class="input-group-append">
+                        <button type="submit" class="btn btn-primary">ارسال</button>
+                      </span>
+                    </div>
+                  </form>
+                </div>
+                <!-- /.card-footer-->
+              </div>
+              <!--/.direct-chat -->
+            </div>
+            <!-- /.col -->
+
+            <div class="col-md-3">
+              <!-- چت مستقیم SUCCESS -->
+              <div class="card card-success card-outline direct-chat direct-chat-success">
+                <div class="card-header">
+                  <h3 class="card-title">چت مستقیم</h3>
+
+                  <div class="card-tools">
+                    <span title="3 New Messages" class="badge bg-success">3</span>
+                    <button type="button" class="btn btn-tool" data-card-widget="collapse">
+                      <i class="fas fa-minus"></i>
+                    </button>
+                    <button type="button" class="btn btn-tool" title="Contacts" data-widget="chat-pane-toggle">
+                      <i class="fas fa-comments"></i>
+                    </button>
+                    <button type="button" class="btn btn-tool" data-card-widget="remove">
+                      <i class="fas fa-times"></i>
+                    </button>
+                  </div>
+                </div>
+                <!-- /.card-header -->
+                <div class="card-body">
+                  <!-- Conversations are loaded here -->
+                  <div class="direct-chat-messages">
+                    <!-- Message. Default to the left -->
+                    <div class="direct-chat-msg">
+                      <div class="direct-chat-infos clearfix">
+                        <span class="direct-chat-name float-left">مهدی آمره</span>
+                        <span class="direct-chat-timestamp float-right">23 تیر 2:00 بعدازظهر</span>
+                      </div>
+                      <!-- /.direct-chat-infos -->
+                      <img class="direct-chat-img" src="../dist/img/user1-128x128.jpg" alt="Message User Image">
+                      <!-- /.direct-chat-img -->
+                      <div class="direct-chat-text">
+                        این قالب واقعا رایگان هست؟ مکن که باورم نمیشه!
+                      </div>
+                      <!-- /.direct-chat-text -->
+                    </div>
+                    <!-- /.direct-chat-msg -->
+
+                    <!-- Message to the right -->
+                    <div class="direct-chat-msg right">
+                      <div class="direct-chat-infos clearfix">
+                        <span class="direct-chat-name float-right">سارا حسینی</span>
+                        <span class="direct-chat-timestamp float-left">23 تیر 3:00 بعدازظهر</span>
+                      </div>
+                      <!-- /.direct-chat-infos -->
+                      <img class="direct-chat-img" src="../dist/img/user3-128x128.jpg" alt="Message User Image">
+                      <!-- /.direct-chat-img -->
+                      <div class="direct-chat-text">
+                        پیشنهاد می کنم بهتره این رو باور کنید!
+                      </div>
+                      <!-- /.direct-chat-text -->
+                    </div>
+                    <!-- /.direct-chat-msg -->
+                  </div>
+                  <!--/.direct-chat-messages-->
+
+                  <!-- Contacts are loaded here -->
+                  <div class="direct-chat-contacts">
+                    <ul class="contacts-list">
+                      <li>
+                        <a href="#">
+                          <img class="contacts-list-img" src="../dist/img/user1-128x128.jpg" alt="User Avatar">
+
+                          <div class="contacts-list-info">
+                            <span class="contacts-list-name">
+                              Count Dracula
+                              <small class="contacts-list-date float-right">2/28/2015</small>
+                            </span>
+                            <span class="contacts-list-msg">How have you been? I was...</span>
+                          </div>
+                          <!-- /.contacts-list-info -->
+                        </a>
+                      </li>
+                      <!-- End Contact Item -->
+                    </ul>
+                    <!-- /.contatcts-list -->
+                  </div>
+                  <!-- /.direct-chat-pane -->
+                </div>
+                <!-- /.card-body -->
+                <div class="card-footer">
+                  <form action="#" method="post">
+                    <div class="input-group">
+                      <input type="text" name="message" placeholder="پیغام خود را بنویسید ..." class="form-control">
+                      <span class="input-group-append">
+                        <button type="submit" class="btn btn-success">ارسال</button>
+                      </span>
+                    </div>
+                  </form>
+                </div>
+                <!-- /.card-footer-->
+              </div>
+              <!--/.direct-chat -->
+            </div>
+            <!-- /.col -->
+
+            <div class="col-md-3">
+              <!-- چت مستقیم WARNING -->
+              <div class="card card-warning direct-chat direct-chat-warning">
+                <div class="card-header">
+                  <h3 class="card-title">چت مستقیم</h3>
+
+                  <div class="card-tools">
+                    <span title="3 New Messages" class="badge bg-danger">3</span>
+                    <button type="button" class="btn btn-tool" data-card-widget="collapse">
+                      <i class="fas fa-minus"></i>
+                    </button>
+                    <button type="button" class="btn btn-tool" title="Contacts" data-widget="chat-pane-toggle">
+                      <i class="fas fa-comments"></i>
+                    </button>
+                    <button type="button" class="btn btn-tool" data-card-widget="remove">
+                      <i class="fas fa-times"></i>
+                    </button>
+                  </div>
+                </div>
+                <!-- /.card-header -->
+                <div class="card-body">
+                  <!-- Conversations are loaded here -->
+                  <div class="direct-chat-messages">
+                    <!-- Message. Default to the left -->
+                    <div class="direct-chat-msg">
+                      <div class="direct-chat-infos clearfix">
+                        <span class="direct-chat-name float-left">مهدی آمره</span>
+                        <span class="direct-chat-timestamp float-right">23 تیر 2:00 بعدازظهر</span>
+                      </div>
+                      <!-- /.direct-chat-infos -->
+                      <img class="direct-chat-img" src="../dist/img/user1-128x128.jpg" alt="Message User Image">
+                      <!-- /.direct-chat-img -->
+                      <div class="direct-chat-text">
+                        این قالب واقعا رایگان هست؟ مکن که باورم نمیشه!
+                      </div>
+                      <!-- /.direct-chat-text -->
+                    </div>
+                    <!-- /.direct-chat-msg -->
+
+                    <!-- Message to the right -->
+                    <div class="direct-chat-msg right">
+                      <div class="direct-chat-infos clearfix">
+                        <span class="direct-chat-name float-right">سارا حسینی</span>
+                        <span class="direct-chat-timestamp float-left">23 تیر 3:00 بعدازظهر</span>
+                      </div>
+                      <!-- /.direct-chat-infos -->
+                      <img class="direct-chat-img" src="../dist/img/user3-128x128.jpg" alt="Message User Image">
+                      <!-- /.direct-chat-img -->
+                      <div class="direct-chat-text">
+                        پیشنهاد می کنم بهتره این رو باور کنید!
+                      </div>
+                      <!-- /.direct-chat-text -->
+                    </div>
+                    <!-- /.direct-chat-msg -->
+                  </div>
+                  <!--/.direct-chat-messages-->
+
+                  <!-- Contacts are loaded here -->
+                  <div class="direct-chat-contacts">
+                    <ul class="contacts-list">
+                      <li>
+                        <a href="#">
+                          <img class="contacts-list-img" src="../dist/img/user1-128x128.jpg" alt="User Avatar">
+
+                          <div class="contacts-list-info">
+                            <span class="contacts-list-name">
+                              Count Dracula
+                              <small class="contacts-list-date float-right">2/28/2015</small>
+                            </span>
+                            <span class="contacts-list-msg">How have you been? I was...</span>
+                          </div>
+                          <!-- /.contacts-list-info -->
+                        </a>
+                      </li>
+                      <!-- End Contact Item -->
+                    </ul>
+                    <!-- /.contatcts-list -->
+                  </div>
+                  <!-- /.direct-chat-pane -->
+                </div>
+                <!-- /.card-body -->
+                <div class="card-footer">
+                  <form action="#" method="post">
+                    <div class="input-group">
+                      <input type="text" name="message" placeholder="پیغام خود را بنویسید ..." class="form-control">
+                      <span class="input-group-append">
+                        <button type="submit" class="btn btn-warning">ارسال</button>
+                      </span>
+                    </div>
+                  </form>
+                </div>
+                <!-- /.card-footer-->
+              </div>
+              <!--/.direct-chat -->
+            </div>
+            <!-- /.col -->
+
+            <div class="col-md-3">
+              <!-- چت مستقیم DANGER -->
+              <div class="card card-danger direct-chat direct-chat-danger">
+                <div class="card-header">
+                  <h3 class="card-title">چت مستقیم</h3>
+
+                  <div class="card-tools">
+                    <span title="3 New Messages" class="badge">3</span>
+                    <button type="button" class="btn btn-tool" data-card-widget="collapse">
+                      <i class="fas fa-minus"></i>
+                    </button>
+                    <button type="button" class="btn btn-tool" title="Contacts" data-widget="chat-pane-toggle">
+                      <i class="fas fa-comments"></i>
+                    </button>
+                    <button type="button" class="btn btn-tool" data-card-widget="remove">
+                      <i class="fas fa-times"></i>
+                    </button>
+                  </div>
+                </div>
+                <!-- /.card-header -->
+                <div class="card-body">
+                  <!-- Conversations are loaded here -->
+                  <div class="direct-chat-messages">
+                    <!-- Message. Default to the left -->
+                    <div class="direct-chat-msg">
+                      <div class="direct-chat-infos clearfix">
+                        <span class="direct-chat-name float-left">مهدی آمره</span>
+                        <span class="direct-chat-timestamp float-right">23 تیر 2:00 بعدازظهر</span>
+                      </div>
+                      <!-- /.direct-chat-infos -->
+                      <img class="direct-chat-img" src="../dist/img/user1-128x128.jpg" alt="Message User Image">
+                      <!-- /.direct-chat-img -->
+                      <div class="direct-chat-text">
+                        این قالب واقعا رایگان هست؟ مکن که باورم نمیشه!
+                      </div>
+                      <!-- /.direct-chat-text -->
+                    </div>
+                    <!-- /.direct-chat-msg -->
+
+                    <!-- Message to the right -->
+                    <div class="direct-chat-msg right">
+                      <div class="direct-chat-infos clearfix">
+                        <span class="direct-chat-name float-right">سارا حسینی</span>
+                        <span class="direct-chat-timestamp float-left">23 تیر 3:00 بعدازظهر</span>
+                      </div>
+                      <!-- /.direct-chat-infos -->
+                      <img class="direct-chat-img" src="../dist/img/user3-128x128.jpg" alt="Message User Image">
+                      <!-- /.direct-chat-img -->
+                      <div class="direct-chat-text">
+                        پیشنهاد می کنم بهتره این رو باور کنید!
+                      </div>
+                      <!-- /.direct-chat-text -->
+                    </div>
+                    <!-- /.direct-chat-msg -->
+                  </div>
+                  <!--/.direct-chat-messages-->
+
+                  <!-- Contacts are loaded here -->
+                  <div class="direct-chat-contacts">
+                    <ul class="contacts-list">
+                      <li>
+                        <a href="#">
+                          <img class="contacts-list-img" src="../dist/img/user1-128x128.jpg" alt="User Avatar">
+
+                          <div class="contacts-list-info">
+                            <span class="contacts-list-name">
+                              Count Dracula
+                              <small class="contacts-list-date float-right">2/28/2015</small>
+                            </span>
+                            <span class="contacts-list-msg">How have you been? I was...</span>
+                          </div>
+                          <!-- /.contacts-list-info -->
+                        </a>
+                      </li>
+                      <!-- End Contact Item -->
+                    </ul>
+                    <!-- /.contatcts-list -->
+                  </div>
+                  <!-- /.direct-chat-pane -->
+                </div>
+                <!-- /.card-body -->
+                <div class="card-footer">
+                  <form action="#" method="post">
+                    <div class="input-group">
+                      <input type="text" name="message" placeholder="پیغام خود را بنویسید ..." class="form-control">
+                      <span class="input-group-append">
+                        <button type="submit" class="btn btn-danger">ارسال</button>
+                      </span>
+                    </div>
+                  </form>
+                </div>
+                <!-- /.card-footer-->
+              </div>
+              <!--/.direct-chat -->
+            </div>
+            <!-- /.col -->
+          </div>
+          <!-- /.row -->
+
+          <!-- =========================================================== -->
+          <h5 class="mb-2">تنوع سایه ها <small><i>با استفاده از ابزار سایه بوت استرپ</i></small></h5>
+          <div class="row">
+            <div class="col-md-3">
+              <!-- چت مستقیم PRIMARY -->
+              <div class="card card-primary card-outline direct-chat direct-chat-primary shadow-none">
+                <div class="card-header">
+                  <h3 class="card-title">بدون سایه</h3>
+
+                  <div class="card-tools">
+                    <span title="3 New Messages" class="badge bg-primary">3</span>
+                    <button type="button" class="btn btn-tool" data-card-widget="collapse">
+                      <i class="fas fa-minus"></i>
+                    </button>
+                    <button type="button" class="btn btn-tool" title="Contacts" data-widget="chat-pane-toggle">
+                      <i class="fas fa-comments"></i>
+                    </button>
+                    <button type="button" class="btn btn-tool" data-card-widget="remove">
+                      <i class="fas fa-times"></i>
+                    </button>
+                  </div>
+                </div>
+                <!-- /.card-header -->
+                <div class="card-body">
+                  <!-- Conversations are loaded here -->
+                  <div class="direct-chat-messages">
+                    <!-- Message. Default to the left -->
+                    <div class="direct-chat-msg">
+                      <div class="direct-chat-infos clearfix">
+                        <span class="direct-chat-name float-left">مهدی آمره</span>
+                        <span class="direct-chat-timestamp float-right">23 تیر 2:00 بعدازظهر</span>
+                      </div>
+                      <!-- /.direct-chat-infos -->
+                      <img class="direct-chat-img" src="../dist/img/user1-128x128.jpg" alt="Message User Image">
+                      <!-- /.direct-chat-img -->
+                      <div class="direct-chat-text">
+                        این قالب واقعا رایگان هست؟ مکن که باورم نمیشه!
+                      </div>
+                      <!-- /.direct-chat-text -->
+                    </div>
+                    <!-- /.direct-chat-msg -->
+
+                    <!-- Message to the right -->
+                    <div class="direct-chat-msg right">
+                      <div class="direct-chat-infos clearfix">
+                        <span class="direct-chat-name float-right">سارا حسینی</span>
+                        <span class="direct-chat-timestamp float-left">23 تیر 3:00 بعدازظهر</span>
+                      </div>
+                      <!-- /.direct-chat-infos -->
+                      <img class="direct-chat-img" src="../dist/img/user3-128x128.jpg" alt="Message User Image">
+                      <!-- /.direct-chat-img -->
+                      <div class="direct-chat-text">
+                        پیشنهاد می کنم بهتره این رو باور کنید!
+                      </div>
+                      <!-- /.direct-chat-text -->
+                    </div>
+                    <!-- /.direct-chat-msg -->
+                  </div>
+                  <!--/.direct-chat-messages-->
+
+                  <!-- Contacts are loaded here -->
+                  <div class="direct-chat-contacts">
+                    <ul class="contacts-list">
+                      <li>
+                        <a href="#">
+                          <img class="contacts-list-img" src="../dist/img/user1-128x128.jpg" alt="User Avatar">
+
+                          <div class="contacts-list-info">
+                            <span class="contacts-list-name">
+                              Count Dracula
+                              <small class="contacts-list-date float-right">2/28/2015</small>
+                            </span>
+                            <span class="contacts-list-msg">How have you been? I was...</span>
+                          </div>
+                          <!-- /.contacts-list-info -->
+                        </a>
+                      </li>
+                      <!-- End Contact Item -->
+                    </ul>
+                    <!-- /.contatcts-list -->
+                  </div>
+                  <!-- /.direct-chat-pane -->
+                </div>
+                <!-- /.card-body -->
+                <div class="card-footer">
+                  <form action="#" method="post">
+                    <div class="input-group">
+                      <input type="text" name="message" placeholder="پیغام خود را بنویسید" class="form-control">
+                      <span class="input-group-append">
+                        <button type="submit" class="btn btn-primary">ارسال</button>
+                      </span>
+                    </div>
+                  </form>
+                </div>
+                <!-- /.card-footer-->
+              </div>
+              <!--/.direct-chat -->
+            </div>
+            <!-- /.col -->
+
+            <div class="col-md-3">
+              <!-- چت مستقیم SUCCESS -->
+              <div class="card card-success card-outline direct-chat direct-chat-success shadow-sm">
+                <div class="card-header">
+                  <h3 class="card-title">سایه دار - کوچک</h3>
+
+                  <div class="card-tools">
+                    <span title="3 New Messages" class="badge bg-success">3</span>
+                    <button type="button" class="btn btn-tool" data-card-widget="collapse">
+                      <i class="fas fa-minus"></i>
+                    </button>
+                    <button type="button" class="btn btn-tool" title="Contacts" data-widget="chat-pane-toggle">
+                      <i class="fas fa-comments"></i>
+                    </button>
+                    <button type="button" class="btn btn-tool" data-card-widget="remove">
+                      <i class="fas fa-times"></i>
+                    </button>
+                  </div>
+                </div>
+                <!-- /.card-header -->
+                <div class="card-body">
+                  <!-- Conversations are loaded here -->
+                  <div class="direct-chat-messages">
+                    <!-- Message. Default to the left -->
+                    <div class="direct-chat-msg">
+                      <div class="direct-chat-infos clearfix">
+                        <span class="direct-chat-name float-left">مهدی آمره</span>
+                        <span class="direct-chat-timestamp float-right">23 تیر 2:00 بعدازظهر</span>
+                      </div>
+                      <!-- /.direct-chat-infos -->
+                      <img class="direct-chat-img" src="../dist/img/user1-128x128.jpg" alt="Message User Image">
+                      <!-- /.direct-chat-img -->
+                      <div class="direct-chat-text">
+                        این قالب واقعا رایگان هست؟ مکن که باورم نمیشه!
+                      </div>
+                      <!-- /.direct-chat-text -->
+                    </div>
+                    <!-- /.direct-chat-msg -->
+
+                    <!-- Message to the right -->
+                    <div class="direct-chat-msg right">
+                      <div class="direct-chat-infos clearfix">
+                        <span class="direct-chat-name float-right">سارا حسینی</span>
+                        <span class="direct-chat-timestamp float-left">23 تیر 3:00 بعدازظهر</span>
+                      </div>
+                      <!-- /.direct-chat-infos -->
+                      <img class="direct-chat-img" src="../dist/img/user3-128x128.jpg" alt="Message User Image">
+                      <!-- /.direct-chat-img -->
+                      <div class="direct-chat-text">
+                        پیشنهاد می کنم بهتره این رو باور کنید!
+                      </div>
+                      <!-- /.direct-chat-text -->
+                    </div>
+                    <!-- /.direct-chat-msg -->
+                  </div>
+                  <!--/.direct-chat-messages-->
+
+                  <!-- Contacts are loaded here -->
+                  <div class="direct-chat-contacts">
+                    <ul class="contacts-list">
+                      <li>
+                        <a href="#">
+                          <img class="contacts-list-img" src="../dist/img/user1-128x128.jpg" alt="User Avatar">
+
+                          <div class="contacts-list-info">
+                            <span class="contacts-list-name">
+                              Count Dracula
+                              <small class="contacts-list-date float-right">2/28/2015</small>
+                            </span>
+                            <span class="contacts-list-msg">How have you been? I was...</span>
+                          </div>
+                          <!-- /.contacts-list-info -->
+                        </a>
+                      </li>
+                      <!-- End Contact Item -->
+                    </ul>
+                    <!-- /.contatcts-list -->
+                  </div>
+                  <!-- /.direct-chat-pane -->
+                </div>
+                <!-- /.card-body -->
+                <div class="card-footer">
+                  <form action="#" method="post">
+                    <div class="input-group">
+                      <input type="text" name="message" placeholder="پیغام خود را بنویسید ..." class="form-control">
+                      <span class="input-group-append">
+                        <button type="submit" class="btn btn-success">ارسال</button>
+                      </span>
+                    </div>
+                  </form>
+                </div>
+                <!-- /.card-footer-->
+              </div>
+              <!--/.direct-chat -->
+            </div>
+            <!-- /.col -->
+
+            <div class="col-md-3">
+              <!-- چت مستقیم WARNING -->
+              <div class="card card-warning direct-chat direct-chat-warning shadow">
+                <div class="card-header">
+                  <h3 class="card-title">سایه دار - منظم</h3>
+
+                  <div class="card-tools">
+                    <span title="3 New Messages" class="badge bg-danger">3</span>
+                    <button type="button" class="btn btn-tool" data-card-widget="collapse">
+                      <i class="fas fa-minus"></i>
+                    </button>
+                    <button type="button" class="btn btn-tool" title="Contacts" data-widget="chat-pane-toggle">
+                      <i class="fas fa-comments"></i>
+                    </button>
+                    <button type="button" class="btn btn-tool" data-card-widget="remove">
+                      <i class="fas fa-times"></i>
+                    </button>
+                  </div>
+                </div>
+                <!-- /.card-header -->
+                <div class="card-body">
+                  <!-- Conversations are loaded here -->
+                  <div class="direct-chat-messages">
+                    <!-- Message. Default to the left -->
+                    <div class="direct-chat-msg">
+                      <div class="direct-chat-infos clearfix">
+                        <span class="direct-chat-name float-left">مهدی آمره</span>
+                        <span class="direct-chat-timestamp float-right">23 تیر 2:00 بعدازظهر</span>
+                      </div>
+                      <!-- /.direct-chat-infos -->
+                      <img class="direct-chat-img" src="../dist/img/user1-128x128.jpg" alt="Message User Image">
+                      <!-- /.direct-chat-img -->
+                      <div class="direct-chat-text">
+                        این قالب واقعا رایگان هست؟ مکن که باورم نمیشه!
+                      </div>
+                      <!-- /.direct-chat-text -->
+                    </div>
+                    <!-- /.direct-chat-msg -->
+
+                    <!-- Message to the right -->
+                    <div class="direct-chat-msg right">
+                      <div class="direct-chat-infos clearfix">
+                        <span class="direct-chat-name float-right">سارا حسینی</span>
+                        <span class="direct-chat-timestamp float-left">23 تیر 3:00 بعدازظهر</span>
+                      </div>
+                      <!-- /.direct-chat-infos -->
+                      <img class="direct-chat-img" src="../dist/img/user3-128x128.jpg" alt="Message User Image">
+                      <!-- /.direct-chat-img -->
+                      <div class="direct-chat-text">
+                        پیشنهاد می کنم بهتره این رو باور کنید!
+                      </div>
+                      <!-- /.direct-chat-text -->
+                    </div>
+                    <!-- /.direct-chat-msg -->
+                  </div>
+                  <!--/.direct-chat-messages-->
+
+                  <!-- Contacts are loaded here -->
+                  <div class="direct-chat-contacts">
+                    <ul class="contacts-list">
+                      <li>
+                        <a href="#">
+                          <img class="contacts-list-img" src="../dist/img/user1-128x128.jpg" alt="User Avatar">
+
+                          <div class="contacts-list-info">
+                            <span class="contacts-list-name">
+                              Count Dracula
+                              <small class="contacts-list-date float-right">2/28/2015</small>
+                            </span>
+                            <span class="contacts-list-msg">How have you been? I was...</span>
+                          </div>
+                          <!-- /.contacts-list-info -->
+                        </a>
+                      </li>
+                      <!-- End Contact Item -->
+                    </ul>
+                    <!-- /.contatcts-list -->
+                  </div>
+                  <!-- /.direct-chat-pane -->
+                </div>
+                <!-- /.card-body -->
+                <div class="card-footer">
+                  <form action="#" method="post">
+                    <div class="input-group">
+                      <input type="text" name="message" placeholder="پیغام خود را بنویسید ..." class="form-control">
+                      <span class="input-group-append">
+                        <button type="submit" class="btn btn-warning">ارسال</button>
+                      </span>
+                    </div>
+                  </form>
+                </div>
+                <!-- /.card-footer-->
+              </div>
+              <!--/.direct-chat -->
+            </div>
+            <!-- /.col -->
+
+            <div class="col-md-3">
+              <!-- چت مستقیم DANGER -->
+              <div class="card card-danger direct-chat direct-chat-danger shadow-lg">
+                <div class="card-header">
+                  <h3 class="card-title">سایه دار - بزرگ</h3>
+
+                  <div class="card-tools">
+                    <span title="3 New Messages" class="badge">3</span>
+                    <button type="button" class="btn btn-tool" data-card-widget="collapse">
+                      <i class="fas fa-minus"></i>
+                    </button>
+                    <button type="button" class="btn btn-tool" title="Contacts" data-widget="chat-pane-toggle">
+                      <i class="fas fa-comments"></i>
+                    </button>
+                    <button type="button" class="btn btn-tool" data-card-widget="remove">
+                      <i class="fas fa-times"></i>
+                    </button>
+                  </div>
+                </div>
+                <!-- /.card-header -->
+                <div class="card-body">
+                  <!-- Conversations are loaded here -->
+                  <div class="direct-chat-messages">
+                    <!-- Message. Default to the left -->
+                    <div class="direct-chat-msg">
+                      <div class="direct-chat-infos clearfix">
+                        <span class="direct-chat-name float-left">مهدی آمره</span>
+                        <span class="direct-chat-timestamp float-right">23 تیر 2:00 بعدازظهر</span>
+                      </div>
+                      <!-- /.direct-chat-infos -->
+                      <img class="direct-chat-img" src="../dist/img/user1-128x128.jpg" alt="Message User Image">
+                      <!-- /.direct-chat-img -->
+                      <div class="direct-chat-text">
+                        این قالب واقعا رایگان هست؟ مکن که باورم نمیشه!
+                      </div>
+                      <!-- /.direct-chat-text -->
+                    </div>
+                    <!-- /.direct-chat-msg -->
+
+                    <!-- Message to the right -->
+                    <div class="direct-chat-msg right">
+                      <div class="direct-chat-infos clearfix">
+                        <span class="direct-chat-name float-right">سارا حسینی</span>
+                        <span class="direct-chat-timestamp float-left">23 تیر 3:00 بعدازظهر</span>
+                      </div>
+                      <!-- /.direct-chat-infos -->
+                      <img class="direct-chat-img" src="../dist/img/user3-128x128.jpg" alt="Message User Image">
+                      <!-- /.direct-chat-img -->
+                      <div class="direct-chat-text">
+                        پیشنهاد می کنم بهتره این رو باور کنید!
+                      </div>
+                      <!-- /.direct-chat-text -->
+                    </div>
+                    <!-- /.direct-chat-msg -->
+                  </div>
+                  <!--/.direct-chat-messages-->
+
+                  <!-- Contacts are loaded here -->
+                  <div class="direct-chat-contacts">
+                    <ul class="contacts-list">
+                      <li>
+                        <a href="#">
+                          <img class="contacts-list-img" src="../dist/img/user1-128x128.jpg" alt="User Avatar">
+
+                          <div class="contacts-list-info">
+                            <span class="contacts-list-name">
+                              Count Dracula
+                              <small class="contacts-list-date float-right">2/28/2015</small>
+                            </span>
+                            <span class="contacts-list-msg">How have you been? I was...</span>
+                          </div>
+                          <!-- /.contacts-list-info -->
+                        </a>
+                      </li>
+                      <!-- End Contact Item -->
+                    </ul>
+                    <!-- /.contatcts-list -->
+                  </div>
+                  <!-- /.direct-chat-pane -->
+                </div>
+                <!-- /.card-body -->
+                <div class="card-footer">
+                  <form action="#" method="post">
+                    <div class="input-group">
+                      <input type="text" name="message" placeholder="پیغام خود را بنویسید ..." class="form-control">
+                      <span class="input-group-append">
+                        <button type="submit" class="btn btn-danger">ارسال</button>
+                      </span>
+                    </div>
+                  </form>
+                </div>
+                <!-- /.card-footer-->
+              </div>
+              <!--/.direct-chat -->
+            </div>
+            <!-- /.col -->
+          </div>
+          <!-- /.row -->
+
+          <h3 class="mt-4 mb-4">ابزار شبکه اجتماعی</h3>
+
+          <div class="row">
+            <div class="col-md-4">
+              <!-- Widget: user widget style 2 -->
+              <div class="card card-widget widget-user-2">
+                <!-- Add the bg color to the header using any of the bg-* classes -->
+                <div class="widget-user-header bg-warning">
+                  <div class="widget-user-image">
+                    <img class="img-circle elevation-2" src="../dist/img/user7-128x128.jpg" alt="User Avatar">
+                  </div>
+                  <!-- /.widget-user-image -->
+                  <h3 class="widget-user-username">نادیا لطفی</h3>
+                  <h5 class="widget-user-desc">توسعه دهنده فرانت اند</h5>
+                </div>
+                <div class="card-footer p-0">
+                  <ul class="nav flex-column">
+                    <li class="nav-item">
+                      <a href="#" class="nav-link">
+                        پروژه ها <span class="float-left badge bg-primary">31</span>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#" class="nav-link">
+                        تسک ها <span class="float-left badge bg-info">5</span>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#" class="nav-link">
+                        پروزه های تکمیل شده <span class="float-left badge bg-success">12</span>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#" class="nav-link">
+                        دنبال کنندگان <span class="float-left badge bg-danger">842</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <!-- /.widget-user -->
+            </div>
+            <!-- /.col -->
+            <div class="col-md-4">
+              <!-- Widget: user widget style 1 -->
+              <div class="card card-widget widget-user">
+                <!-- Add the bg color to the header using any of the bg-* classes -->
+                <div class="widget-user-header bg-info">
+                  <h3 class="widget-user-username">مهدی آمره</h3>
+                  <h5 class="widget-user-desc">توسعه دهنده وب</h5>
+                </div>
+                <div class="widget-user-image">
+                  <img class="img-circle elevation-2" src="../dist/img/user1-128x128.jpg" alt="User Avatar">
+                </div>
+                <div class="card-footer">
+                  <div class="row">
+                    <div class="col-sm-4 border-right">
+                      <div class="description-block">
+                        <h5 class="description-header">3,200</h5>
+                        <span class="description-text">فروش ها</span>
+                      </div>
+                      <!-- /.description-block -->
+                    </div>
+                    <!-- /.col -->
+                    <div class="col-sm-4 border-right">
+                      <div class="description-block">
+                        <h5 class="description-header">13,000</h5>
+                        <span class="description-text">دنبال کنندگان</span>
+                      </div>
+                      <!-- /.description-block -->
+                    </div>
+                    <!-- /.col -->
+                    <div class="col-sm-4">
+                      <div class="description-block">
+                        <h5 class="description-header">35</h5>
+                        <span class="description-text">محصولات</span>
+                      </div>
+                      <!-- /.description-block -->
+                    </div>
+                    <!-- /.col -->
+                  </div>
+                  <!-- /.row -->
+                </div>
+              </div>
+              <!-- /.widget-user -->
+            </div>
+            <!-- /.col -->
+            <div class="col-md-4">
+              <!-- Widget: user widget style 1 -->
+              <div class="card card-widget widget-user">
+                <!-- Add the bg color to the header using any of the bg-* classes -->
+                <div class="widget-user-header text-white"
+                  style="background: url('../dist/img/photo1.png') center center;">
+                  <h3 class="widget-user-username text-right">محدثه پیری</h3>
+                  <h5 class="widget-user-desc text-right">طرح وب</h5>
+                </div>
+                <div class="widget-user-image">
+                  <img class="img-circle" src="../dist/img/user3-128x128.jpg" alt="User Avatar">
+                </div>
+                <div class="card-footer">
+                  <div class="row">
+                    <div class="col-sm-4 border-right">
+                      <div class="description-block">
+                        <h5 class="description-header">3,200</h5>
+                        <span class="description-text">فروش ها</span>
+                      </div>
+                      <!-- /.description-block -->
+                    </div>
+                    <!-- /.col -->
+                    <div class="col-sm-4 border-right">
+                      <div class="description-block">
+                        <h5 class="description-header">13,000</h5>
+                        <span class="description-text">دنبال کنندگان</span>
+                      </div>
+                      <!-- /.description-block -->
+                    </div>
+                    <!-- /.col -->
+                    <div class="col-sm-4">
+                      <div class="description-block">
+                        <h5 class="description-header">35</h5>
+                        <span class="description-text">محصولات</span>
+                      </div>
+                      <!-- /.description-block -->
+                    </div>
+                    <!-- /.col -->
+                  </div>
+                  <!-- /.row -->
+                </div>
+              </div>
+              <!-- /.widget-user -->
+            </div>
+            <!-- /.col -->
+          </div>
+          <!-- /.row -->
+
+          <div class="row">
+            <div class="col-md-6">
+              <!-- Box Comment -->
+              <div class="card card-widget">
+                <div class="card-header">
+                  <div class="user-block">
+                    <img class="img-circle" src="../dist/img/user1-128x128.jpg" alt="User Image">
+                    <span class="username"><a href="#">مهدی آمره</a></span>
+                    <span class="description">به اشتراک گذاشته شده به صورت عمومی - 7:30 عصر امروز</span>
+                  </div>
+                  <!-- /.user-block -->
+                  <div class="card-tools">
+                    <button type="button" class="btn btn-tool" title="Mark as read">
+                      <i class="far fa-circle"></i>
+                    </button>
+                    <button type="button" class="btn btn-tool" data-card-widget="collapse">
+                      <i class="fas fa-minus"></i>
+                    </button>
+                    <button type="button" class="btn btn-tool" data-card-widget="remove">
+                      <i class="fas fa-times"></i>
+                    </button>
+                  </div>
+                  <!-- /.card-tools -->
+                </div>
+                <!-- /.card-header -->
+                <div class="card-body">
+                  <img class="img-fluid pad" src="../dist/img/photo2.png" alt="Photo">
+
+                  <p>من این عکس را امروز صبح گرفتم. نظر شما بچه ها چیه؟</p>
+                  <button type="button" class="btn btn-default btn-sm"><i class="fas fa-share"></i> اشتراک
+                    گذاری</button>
+                  <button type="button" class="btn btn-default btn-sm"><i class="far fa-thumbs-up"></i> پسندیدن</button>
+                  <span class="float-right text-muted">127 پسند - 3 نظر</span>
+                </div>
+                <!-- /.card-body -->
+                <div class="card-footer card-comments">
+                  <div class="card-comment">
+                    <!-- User image -->
+                    <img class="img-circle img-sm" src="../dist/img/user3-128x128.jpg" alt="User Image">
+
+                    <div class="comment-text">
+                      <span class="username">
+                        مریم جعفری
+                        <span class="text-muted float-right">8:03 بعد ازظهر امروز</span>
+                      </span><!-- /.username -->
+                      این یک واقعیت ثابت شده طولانی است که خواننده هنگام مشاهده صفحه آن ، از محتوای قابل خواندن صفحه
+                      منحرف می شود
+                    </div>
+                    <!-- /.comment-text -->
+                  </div>
+                  <!-- /.card-comment -->
+                  <div class="card-comment">
+                    <!-- User image -->
+                    <img class="img-circle img-sm" src="../dist/img/user4-128x128.jpg" alt="User Image">
+
+                    <div class="comment-text">
+                      <span class="username">
+                        هنگامه رحیمی
+                        <span class="text-muted float-right">8:03 بعد از ظهر امروز</span>
+                      </span><!-- /.username -->
+                      این یک واقعیت ثابت شده طولانی است که خواننده هنگام مشاهده صفحه آن ، از محتوای قابل خواندن صفحه
+                      منحرف می شود
+                    </div>
+                    <!-- /.comment-text -->
+                  </div>
+                  <!-- /.card-comment -->
+                </div>
+                <!-- /.card-footer -->
+                <div class="card-footer">
+                  <form action="#" method="post">
+                    <img class="img-fluid img-circle img-sm" src="../dist/img/user4-128x128.jpg" alt="Alt Text">
+                    <!-- .img-push is used to add margin to elements next to floating images -->
+                    <div class="img-push">
+                      <input type="text" class="form-control form-control-sm"
+                        placeholder="برای ارسال دیدگاه لطفا کلیک کنید">
+                    </div>
+                  </form>
+                </div>
+                <!-- /.card-footer -->
+              </div>
+              <!-- /.card -->
+            </div>
+            <!-- /.col -->
+            <div class="col-md-6">
+              <!-- Box Comment -->
+              <div class="card card-widget">
+                <div class="card-header">
+                  <div class="user-block">
+                    <img class="img-circle" src="../dist/img/user1-128x128.jpg" alt="User Image">
+                    <span class="username"><a href="#">مهدی آمره</a></span>
+                    <span class="description">به اشتراک گذاشته شده به صورت عمومی - 7:30 عصر امروز</span>
+                  </div>
+                  <!-- /.user-block -->
+                  <div class="card-tools">
+                    <button type="button" class="btn btn-tool" title="Mark as read">
+                      <i class="far fa-circle"></i>
+                    </button>
+                    <button type="button" class="btn btn-tool" data-card-widget="collapse">
+                      <i class="fas fa-minus"></i>
+                    </button>
+                    <button type="button" class="btn btn-tool" data-card-widget="remove">
+                      <i class="fas fa-times"></i>
+                    </button>
+                  </div>
+                  <!-- /.card-tools -->
+                </div>
+                <!-- /.card-header -->
+                <div class="card-body">
+                  <!-- post text -->
+                  <p>خیلی دور ، پشت کلمه کوه ، دور از کشورهای Vokalia و Consonantia ، متن های کور زندگی می کنند. جدا شده
+                    آنها در Bookmarksgrove زندگی می کنند درست در</p>
+
+                  <p>ساحل معناشناسی ، یک اقیانوس بزرگ زبان. رودخانه کوچکی به نام دودن در کنار مکان آنها جریان دارد و
+                    مواد ضد شورشی لازم را برای آن تأمین می کند. این یک کشور پارادایزمی است که در آن قسمتهایی از جمله های
+                    بو داده به دهان شما پرواز می کنند.</p>
+
+                  <!-- Attachment -->
+                  <div class="attachment-block clearfix">
+                    <img class="attachment-img" src="../dist/img/photo1.png" alt="Attachment Image">
+
+                    <div class="attachment-pushed">
+                      <h4 class="attachment-heading"><a href="https://www.lipsum.com/">Lorem ipsum text generator</a>
+                      </h4>
+
+                      <div class="attachment-text">
+                        توضیحات مربوط به پیوست را می توانید در اینجا قرار دهید.
+                        لورم به سادگی متن ساختگی صنعت چاپ و حروفچینی است ... <a href="#">بیشتر بخوانید</a>
+                      </div>
+                      <!-- /.attachment-text -->
+                    </div>
+                    <!-- /.attachment-pushed -->
+                  </div>
+                  <!-- /.attachment-block -->
+
+                  <!-- Social sharing buttons -->
+                  <button type="button" class="btn btn-default btn-sm"><i class="fas fa-share"></i> اشتراک
+                    گذاری</button>
+                  <button type="button" class="btn btn-default btn-sm"><i class="far fa-thumbs-up"></i> پسندیدن</button>
+                  <span class="float-right text-muted">45 پسند - 2 نظر</span>
+                </div>
+                <!-- /.card-body -->
+                <div class="card-footer card-comments">
+                  <div class="card-comment">
+                    <!-- User image -->
+                    <img class="img-circle img-sm" src="../dist/img/user3-128x128.jpg" alt="User Image">
+
+                    <div class="comment-text">
+                      <span class="username">
+                        مریم جعفری
+                        <span class="text-muted float-right">8:03 بعد از ظهر امروز</span>
+                      </span><!-- /.username -->
+                      این یک واقعیت ثابت شده طولانی است که خواننده هنگام مشاهده صفحه آن ، از محتوای قابل خواندن صفحه
+                      منحرف می شود.
+                    </div>
+                    <!-- /.comment-text -->
+                  </div>
+                  <!-- /.card-comment -->
+                  <div class="card-comment">
+                    <!-- User image -->
+                    <img class="img-circle img-sm" src="../dist/img/user5-128x128.jpg" alt="User Image">
+
+                    <div class="comment-text">
+                      <span class="username">
+                        Nora Havisham
+                        <span class="text-muted float-right">8:03 PM Today</span>
+                      </span><!-- /.username -->
+                      وجود دارد این است که توزیع کمتر و کمتری از حروف را در مقابل خود دارد ، در مقابل با استفاده از
+                      "محتوا در اینجا ، محتوای اینجا" ، و آن را شبیه به انگلیسی خواندنی نشان می دهد.
+                    </div>
+                    <!-- /.comment-text -->
+                  </div>
+                  <!-- /.card-comment -->
+                </div>
+                <!-- /.card-footer -->
+                <div class="card-footer">
+                  <form action="#" method="post">
+                    <img class="img-fluid img-circle img-sm" src="../dist/img/user4-128x128.jpg" alt="Alt Text">
+                    <!-- .img-push is used to add margin to elements next to floating images -->
+                    <div class="img-push">
+                      <input type="text" class="form-control form-control-sm"
+                        placeholder="برای ارسال دیدگاه لطفا کلیک کنید">
+                    </div>
+                  </form>
+                </div>
+                <!-- /.card-footer -->
+              </div>
+              <!-- /.card -->
+            </div>
+            <!-- /.col -->
+          </div>
+          <!-- /.row -->
+
+          <!-- =========================================================== -->
+          <h5 class="mb-2">تنوع رنگی سایه ها <small><i>با استفاده از ابزار سایه بوت استرپ</i></small></h5>
+          <div class="row">
+            <div class="col-md-4">
+              <!-- Widget: user widget style 2 -->
+              <div class="card card-widget widget-user-2 shadow-sm">
+                <!-- Add the bg color to the header using any of the bg-* classes -->
+                <div class="widget-user-header bg-warning">
+                  <div class="widget-user-image">
+                    <img class="img-circle elevation-2" src="../dist/img/user7-128x128.jpg" alt="User Avatar">
+                  </div>
+                  <!-- /.widget-user-image -->
+                  <h3 class="widget-user-username">نادیا لطفای</h3>
+                  <h5 class="widget-user-desc">توسعه دهنده وب</h5>
+                </div>
+                <div class="card-footer p-0">
+                  <ul class="nav flex-column">
+                    <li class="nav-item">
+                      <a href="#" class="nav-link">
+                        پروژه <span class="float-left badge bg-primary">31</span>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#" class="nav-link">
+                        تسک ها <span class="float-left badge bg-info">5</span>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#" class="nav-link">
+                        پروژه تکمیل شده <span class="float-left badge bg-success">12</span>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#" class="nav-link">
+                        دنبال کنندگان <span class="float-left badge bg-danger">842</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <!-- /.widget-user -->
+            </div>
+            <!-- /.col -->
+            <div class="col-md-4">
+              <!-- Widget: user widget style 1 -->
+              <div class="card card-widget widget-user shadow">
+                <!-- Add the bg color to the header using any of the bg-* classes -->
+                <div class="widget-user-header bg-info">
+                  <h3 class="widget-user-username">مهدی آمره</h3>
+                  <h5 class="widget-user-desc">توسعه دهنده وب</h5>
+                </div>
+                <div class="widget-user-image">
+                  <img class="img-circle elevation-2" src="../dist/img/user1-128x128.jpg" alt="User Avatar">
+                </div>
+                <div class="card-footer">
+                  <div class="row">
+                    <div class="col-sm-4 border-right">
+                      <div class="description-block">
+                        <h5 class="description-header">3,200</h5>
+                        <span class="description-text">فروش</span>
+                      </div>
+                      <!-- /.description-block -->
+                    </div>
+                    <!-- /.col -->
+                    <div class="col-sm-4 border-right">
+                      <div class="description-block">
+                        <h5 class="description-header">13,000</h5>
+                        <span class="description-text">دنبال کنندگان</span>
+                      </div>
+                      <!-- /.description-block -->
+                    </div>
+                    <!-- /.col -->
+                    <div class="col-sm-4">
+                      <div class="description-block">
+                        <h5 class="description-header">35</h5>
+                        <span class="description-text">محصولات</span>
+                      </div>
+                      <!-- /.description-block -->
+                    </div>
+                    <!-- /.col -->
+                  </div>
+                  <!-- /.row -->
+                </div>
+              </div>
+              <!-- /.widget-user -->
+            </div>
+            <!-- /.col -->
+            <div class="col-md-4">
+              <!-- Widget: user widget style 1 -->
+              <div class="card card-widget widget-user shadow-lg">
+                <!-- Add the bg color to the header using any of the bg-* classes -->
+                <div class="widget-user-header text-white"
+                  style="background: url('../dist/img/photo1.png') center center;">
+                  <h3 class="widget-user-username text-left">محدثه پیری</h3>
+                  <h5 class="widget-user-desc text-left">طراح وب</h5>
+                </div>
+                <div class="widget-user-image">
+                  <img class="img-circle" src="../dist/img/user3-128x128.jpg" alt="User Avatar">
+                </div>
+                <div class="card-footer">
+                  <div class="row">
+                    <div class="col-sm-4 border-left">
+                      <div class="description-block">
+                        <h5 class="description-header">3,200</h5>
+                        <span class="description-text">فروش</span>
+                      </div>
+                      <!-- /.description-block -->
+                    </div>
+                    <!-- /.col -->
+                    <div class="col-sm-4 border-left">
+                      <div class="description-block">
+                        <h5 class="description-header">13,000</h5>
+                        <span class="description-text">دنبال کنندگان</span>
+                      </div>
+                      <!-- /.description-block -->
+                    </div>
+                    <!-- /.col -->
+                    <div class="col-sm-4">
+                      <div class="description-block">
+                        <h5 class="description-header">35</h5>
+                        <span class="description-text">محصول</span>
+                      </div>
+                      <!-- /.description-block -->
+                    </div>
+                    <!-- /.col -->
+                  </div>
+                  <!-- /.row -->
+                </div>
+              </div>
+              <!-- /.widget-user -->
+            </div>
+            <!-- /.col -->
+          </div>
+          <!-- /.row -->
+
+          <h5 class="mb-2">کارت با پوشش تصویر</h5>
+          <div class="card card-success">
+            <div class="card-body">
+              <div class="row">
+                <div class="col-md-12 col-lg-6 col-xl-4">
+                  <div class="card mb-2 bg-gradient-dark">
+                    <img class="card-img-top" src="../dist/img/photo1.png" alt="Dist Photo 1">
+                    <div class="card-img-overlay d-flex flex-column justify-content-end">
+                      <h5 class="card-title text-primary text-white">عنوان کارت</h5>
+                      <p class="card-text text-white pb-2 pt-1">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت
+                        چاپ و با استفاده از طراحان گرافیک است</p>
+                      <a href="#" class="text-white">آخرین بروزرسانی 22 دقیقه پیش</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-12 col-lg-6 col-xl-4">
+                  <div class="card mb-2">
+                    <img class="card-img-top" src="../dist/img/photo2.png" alt="Dist Photo 2">
+                    <div class="card-img-overlay d-flex flex-column justify-content-center">
+                      <h5 class="card-title text-white mt-5 pt-2">عنوان کارت</h5>
+                      <p class="card-text pb-2 pt-1 text-white">
+                        لورم ایپسوم متن ساختگی با تولید سادگی <br>
+                        نامفهوم از صنعت چاپ و با استفاده <br>
+                        از طراحان گرافیک است.
+                      </p>
+                      <a href="#" class="text-white">آخرین بروزرسانی 15 ساعت پیش</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-12 col-lg-6 col-xl-4">
+                  <div class="card mb-2">
+                    <img class="card-img-top" src="../dist/img/photo3.jpg" alt="Dist Photo 3">
+                    <div class="card-img-overlay">
+                      <h5 class="card-title text-primary">عنوان کارت</h5>
+                      <p class="card-text pb-1 pt-1 text-white">
+                        لورم ایپسوم متن ساختگی با تولید سادگی <br>
+                        نامفهوم از صنعت چاپ و با استفاده <br>
+                        از طراحان گرافیک است. </p>
+                      <a href="#" class="text-primary">آخرین بروزرسانی 3 روز پیش</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div><!-- /.container-fluid -->
+      </section>
+      <!-- /.content -->
+
+      <a id="back-to-top" href="#" class="btn btn-primary back-to-top" role="button" aria-label="Scroll to top">
+        <i class="fas fa-chevron-up"></i>
+      </a>
+    </div>
+    <!-- /.content-wrapper -->
+
+    <footer class="main-footer">
+      <strong>کپی رایت &copy; 2014-2020 <a href="https://adminlte.io">AdminLTE.io</a>.</strong>
+      تمامی حقوق محفوظ می باشد. ارائه شده برای پارسی زبانان توسط <a href="http://mahdieight.ir">مهدی آمره</a>
+      <div class="float-left d-none d-sm-inline-block">
+        <b>نسخه</b> 3.1.0-rc
+      </div>
+    </footer>
+
+    <!-- Control Sidebar -->
+    <aside class="control-sidebar control-sidebar-dark">
+      <!-- Control sidebar content goes here -->
+    </aside>
+    <!-- /.control-sidebar -->
+  </div>
+  <!-- ./wrapper -->
+
+  <!-- jQuery -->
+  <script src="../plugins/jquery/jquery.min.js"></script>
+  <!-- Bootstrap 4 -->
+  <script src="../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <!-- AdminLTE App -->
+  <script src="../dist/js/adminlte.min.js"></script>
+  <!-- AdminLTE for demo purposes -->
+  <script src="../dist/js/demo.js"></script>
+</body>
+
+</html>
